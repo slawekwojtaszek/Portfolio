@@ -1,36 +1,8 @@
 @import url("../Reset.css");
 @import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
 
-/* Technologies Used */
-
-.technologies-mobile {
-   margin: 5rem auto;
-   width: 80%;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
-   align-items: center;
-   /* border: 3px solid red; */
-}
-
-.technologies-mobile h1 {
-   margin-top: 3rem;
-}
-
-.cont {
-   margin-top: 1rem;
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-}
-
-.react,
-.js,
-.css,
-.html,
-.type-script {
-   font-size: 2rem;
-   padding: 1rem;
+.mobile-container {
+   max-width: 100vw;
 }
 
 /* Navbar */
@@ -41,13 +13,13 @@ nav {
    box-shadow: 1px 1px 5px #949494;
 }
 
-/* Logo */
-
 .top-container {
    display: flex;
    align-items: center;
    justify-content: space-between;
 }
+
+/* Logo */
 
 .logo h1 {
    font-family: "Hammersmith One", sans-serif;
@@ -55,27 +27,6 @@ nav {
    margin: 1rem 1rem 0.5rem 1rem;
    font-weight: 400;
 }
-
-/* Menu Mobile */
-
-.sidemenu {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
-   margin-top: 3rem;
-   max-width: 100vw;
-   max-height: 100vh;
-   background-color: rgb(232, 232, 232);
-   z-index: 2;
-}
-
-.sidemenu.onOff {
-   position: fixed;
-   overflow: hidden;
-   width: 0%;
-   height: 100vh;
-}
-
 .logo-mobile {
    font-family: "Hammersmith One", sans-serif;
    margin: 6rem auto 2rem auto;
@@ -86,41 +37,95 @@ nav {
    color: rgb(38, 38, 38);
 }
 
-.menu-mobile {
-   width: 100%;
-   min-height: 10vh;
-   margin-top: 1rem;
+/* Menu Mobile */
+
+.bottom-container {
    display: flex;
+   position: absolute;
    flex-direction: column;
    justify-content: space-around;
+   align-content: center;
+   height: 92vh;
+   width: 100%;
+   background-color: rgb(232, 232, 232);
+   transition: all 0.3s ease-in-out;
+   z-index: 3;
+}
+
+.bottom-container.onOff {
+   transform: translateX(500px);
+}
+
+.list {
+   display: flex;
+   justify-content: space-around;
+   flex-direction: column;
    align-items: center;
 }
 
 li {
    width: 100%;
-   padding: 1rem 0rem;
-   margin: 0.5rem 1rem;
+   padding: 0.5rem 0rem;
+   margin: 0.5rem 0.5rem;
    font-size: 2rem;
    color: white;
    font-weight: 700;
    text-align: center;
 }
 
-.menu-mobile a {
+.bottom-container a {
    display: block;
-   /* background-color: black; */
    border-radius: 5px;
    width: 35%;
    margin: 0.1rem auto;
    padding: 0.3rem 0.4rem;
    color: rgba(33, 33, 33, 0.884);
-   font-size: 1.5rem;
+   font-size: 1.8rem;
    text-decoration: underline;
+}
+
+/* Technologies Used */
+
+.technologies-mobile {
+   /* margin: 1rem auto 1rem auto; */
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   align-content: flex-end;
+   height: 20%;
+}
+
+.react,
+.js,
+.css,
+.html,
+.type-script,
+.figma {
+   font-size: 1.7rem;
+   padding: 1rem;
+}
+
+.technologies-container {
+   height: 20%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.menu-mobile {
+   width: 100%;
+   height: 40%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   background-color: rgb(232, 232, 232);
 }
 
 /* Menu Large */
 
-.menu a {
+/* .menu a {
    display: block;
    width: 70%;
    margin: 0.1rem auto;
@@ -128,7 +133,7 @@ li {
    color: #000;
    font-size: 1.1rem;
    border: 4px solid rgb(156, 67, 67);
-}
+} */
 
 /* Menu Icon */
 
@@ -175,7 +180,6 @@ li {
    transform: translateX(-50px);
    background: transparent;
    box-shadow: none;
-   z-index: 3;
 }
 .menu-btn.open .menu-btn__burger::before {
    transform: rotate(45deg) translate(35px, -35px);
@@ -202,7 +206,7 @@ li {
 
 /* MEDIA QUERIES */
 
-@media (min-width: 770px) {
+/* @media (min-width: 770px) {
    .menu {
       width: 50%;
       display: block;
@@ -223,4 +227,4 @@ li {
    .logo {
       width: 40%;
    }
-}
+} */

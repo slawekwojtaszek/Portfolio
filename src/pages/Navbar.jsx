@@ -1,21 +1,15 @@
 import React from "react";
-import { useState } from "react";
-import "./Navbar.css";
+import "../css/Navbar.css";
 import {
    SiReact,
    SiJavascript,
    SiHtml5,
    SiCss3,
    SiTypescript,
+   SiFigma,
 } from "react-icons/si";
 
-function Navbar() {
-   const [isClose, setisClose] = useState(true);
-
-   const newButton = () => {
-      setisClose((isClose) => !isClose);
-   };
-
+function Navbar({ isClose, onClick }) {
    return (
       <>
          <nav className='nav-container'>
@@ -26,55 +20,59 @@ function Navbar() {
                <div className='icon-container'>
                   <div
                      className={isClose ? "menu-btn" : "menu-btn open"}
-                     onClick={newButton}>
+                     onClick={onClick}>
                      <div className='menu-btn__burger'></div>
                   </div>
                </div>
             </div>
 
-            <div className='mobile-container'>
-               <div className={isClose ? "sidemenu onOff " : "sidemenu"}>
-                  <ul className='menu-mobile'>
-                     <li>
-                        {" "}
-                        <a href='#'>Home</a>
-                     </li>
-                     <li>
-                        {" "}
-                        <a href=''>Projects</a>
-                     </li>
-                     <li>
-                        {" "}
-                        <a href='#'>CV</a>
-                     </li>
-                     <li>
-                        {" "}
-                        <a href='#'>About</a>
-                     </li>
-                     <li>
-                        {" "}
-                        <a href='#'>Contact</a>
-                     </li>
-                  </ul>
+            <div
+               className={
+                  isClose ? "bottom-container onOff " : "bottom-container"
+               }>
+               <ul className='list'>
+                  <li>
+                     {" "}
+                     <a href='#'>Home</a>
+                  </li>
+                  <li>
+                     {" "}
+                     <a href=''>Projects</a>
+                  </li>
+                  <li>
+                     {" "}
+                     <a href='#'>CV</a>
+                  </li>
+                  <li>
+                     {" "}
+                     <a href='#'>About</a>
+                  </li>
+                  <li>
+                     {" "}
+                     <a href='#'>Contact</a>
+                  </li>
+               </ul>
 
-                  <div className='technologies-mobile'>
-                     <h1>Technologies used</h1>
-                     <div className='cont'>
-                        <div className='react'>
-                           <SiReact />
-                        </div>
-                        <div className='js'>
-                           <SiJavascript />
-                        </div>
-                        <div className='html'>
-                           <SiHtml5 />
-                        </div>
-                        <div className='css'>
-                           <SiCss3 />
-                        </div>
-                        <div className='type-script'>
-                           <SiTypescript />
-                        </div>
+               <div className='technologies-mobile'>
+                  <h1>Technologies used</h1>
+                  <div className='technologies-container'>
+                     <div className='react'>
+                        <SiReact />
+                     </div>
+                     <div className='js'>
+                        <SiJavascript />
+                     </div>
+                     <div className='html'>
+                        <SiHtml5 />
+                     </div>
+                     <div className='css'>
+                        <SiCss3 />
+                     </div>
+                     <div className='type-script'>
+                        <SiTypescript />
+                     </div>
+                     <div className='figma'>
+                        <SiFigma />
                      </div>
                   </div>
                </div>

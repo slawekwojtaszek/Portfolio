@@ -1,0 +1,9 @@
+header {
+   height: 92vh;
+   width: 100vw;
+}
+
+header .container {
+   height: 100%;
+   border: 3px solid red;
+}
