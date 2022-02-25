@@ -1,0 +1,7 @@
+.wrapper {
+   height: 100vh;
+   background-image: url("../src/img/bgmedium3.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 800px 900px;
+}

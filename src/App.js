@@ -13,8 +13,10 @@ function App(props) {
    };
    return (
       <>
-         <Navbar onClick={newButton} isClose={isClose} />
-         <Header />
+         <div className='wrapper'>
+            <Navbar onClick={newButton} isClose={isClose} />
+            <Header />
+         </div>
       </>
    );
 }
