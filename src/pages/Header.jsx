@@ -1,4 +1,6 @@
 import React from "react";
+
+import { Link } from "react-router-dom";
 import "../css/Header.css";
 import { FaEye } from "react-icons/fa";
 import { FaListUl } from "react-icons/fa";
@@ -12,12 +14,14 @@ function Header() {
                <h1>Welcome to where Web is another form of art. </h1>
             </div>
             <div className='box'>
-               <div className='portfolio'>
-                  <div className='icon'>
-                     <FaEye />
+               <Link to='/portfolio'>
+                  <div className='portfolio'>
+                     <div className='icon'>
+                        <FaEye />
+                     </div>
+                     <div className='des'>Portfolio</div>
                   </div>
-                  <div className='des'>Portfolio</div>
-               </div>
+               </Link>
                <div className='skills'>
                   <div className='icon'>
                      <FaListUl />

@@ -1,7 +1,9 @@
 import "./App.css";
 import Header from "./pages/Header";
 import Navbar from "./pages/Navbar";
+import Portfolio from "./pages/Portfolio";
 import Footer from "./pages/Footer";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useState } from "react";
 
 function App(props) {
@@ -15,7 +17,20 @@ function App(props) {
       <>
          <div className='wrapper'>
             <Navbar onClick={newButton} isClose={isClose} />
-            <Header />
+            <Router>
+               <Routes>
+                  <Route
+                     exact
+                     path='/'
+                     element={
+                        <>
+                           <Header />
+                        </>
+                     }></Route>
+
+                  <Route path='/portfolio' element={<Portfolio />} />
+               </Routes>
+            </Router>
          </div>
       </>
    );
