@@ -2,7 +2,11 @@
    font-size: 10rem;
 }
 
-.portfolio-container {
+div.wrapper {
+   background-color: #fff;
+}
+
+div.portfolio-container {
    background-color: red;
-   height: 90vh;
+   height: 20vh;
 }

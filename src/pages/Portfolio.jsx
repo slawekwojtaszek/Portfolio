@@ -1,12 +1,13 @@
 import React from "react";
 import Navbar from "./Navbar";
 import "../css/Portfolio.css";
+import QuickAccessBox from "./QuickAccessBox";
 
-function Portfolio() {
+function Portfolio({ isClose, onClick }) {
    return (
       <>
          <div className='portfolio-container'>
-            <h1 className='ha'>elo</h1>
+            <Navbar onClick={onClick} isClose={isClose} />
          </div>
       </>
    );

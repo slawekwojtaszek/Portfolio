@@ -9,14 +9,25 @@
 
 nav {
    width: 100vw;
-   height: 8vh;
+   height: 15vh;
    /* box-shadow: 1px 1px 1px #ffffff; */
 }
 
+.nav-container {
+   height: 10vh;
+   background-color: #000;
+}
+
 .top-container {
+   background-color: #000;
    display: flex;
    align-items: center;
    justify-content: space-between;
+}
+
+.logo,
+.icon-container {
+   padding: 1rem;
 }
 
 /* Logo */

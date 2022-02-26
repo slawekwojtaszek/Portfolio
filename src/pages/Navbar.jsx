@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../css/Navbar.css";
 import {
    SiReact,
@@ -9,14 +10,17 @@ import {
    SiFigma,
 } from "react-icons/si";
 
-function Navbar({ isClose, onClick }) {
+function Navbar({ isClose, onClick, myKlasa }) {
    return (
       <>
          <nav className='nav-container'>
             <div className='top-container'>
-               <div className='logo'>
-                  <h1>voytashek.</h1>
-               </div>
+               <Link to='/'>
+                  <div className='logo'>
+                     <h1>voytashek.</h1>
+                  </div>{" "}
+               </Link>
+
                <div className='icon-container'>
                   <div
                      className={isClose ? "menu-btn" : "menu-btn open"}
