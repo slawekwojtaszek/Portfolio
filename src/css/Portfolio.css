@@ -27,14 +27,47 @@
    align-items: center;
 }
 
+.single-item-fe {
+   height: 18vh;
+}
+
+.single-item-fe h1 {
+   padding: 1rem 0.5rem;
+   font-size: 1.3rem;
+}
+
+.single-item-fe p {
+   line-height: 1.2rem;
+   padding: 0.5rem 1rem;
+   font-size: 0.8rem;
+}
+
 img {
    padding: 1rem;
    height: 30vh;
    width: 170%;
 }
 
+svg.ijs {
+   background-color: rgb(1, 1, 1);
+   color: rgb(255, 247, 0);
+   font-size: 2rem;
+}
+
+svg.ixd {
+   background-color: rgb(1, 1, 1);
+   color: rgb(252, 5, 174);
+   font-size: 2rem;
+}
+
 .container {
    margin: 1rem;
+}
+
+.stick {
+   position: fixed;
+   top: 90%;
+   left: 0;
 }
 
 .single-item-des {

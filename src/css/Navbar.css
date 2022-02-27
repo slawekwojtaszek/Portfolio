@@ -29,7 +29,7 @@ nav {
    margin: 1rem 1rem 0.5rem 1rem;
    font-weight: 900;
    color: white;
-   text-shadow: 0px 4px 7px rgba(255, 255, 255, 0.904);
+   /* text-shadow: 0px 4px 7px rgba(255, 255, 255, 0.904); */
 }
 .logo-mobile {
    font-family: "Hammersmith One", sans-serif;
@@ -127,6 +127,29 @@ li {
    padding: 1rem;
 }
 
+/* .react {
+   color: #5ed3f3;
+}
+
+.js {
+   color: #efd81d;
+}
+
+.css {
+   color: #2449dd;
+}
+
+.html {
+   color: #e86228;
+}
+
+.type-script {
+   color: #2f74c0;
+}
+
+.figma {
+   color: #0ac97f;
+} */
 .technologies-container {
    height: 20%;
    display: flex;

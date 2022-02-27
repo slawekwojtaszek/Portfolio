@@ -8,7 +8,7 @@ import { GoPerson } from "react-icons/go";
 function QuickAccessBox() {
    return (
       <>
-         <div className='box'>
+         <div className='box stick'>
             <Link to='/portfolio'>
                <div className='portfolio'>
                   <div className='icon'>

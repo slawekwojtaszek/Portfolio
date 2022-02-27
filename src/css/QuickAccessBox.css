@@ -1,14 +1,12 @@
 .box {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   color: white;
+   padding: 1rem;
    height: 10vh;
    width: 100vw;
    background-color: #0069ed;
-}
-
-.box {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   color: white;
 }
 
 .portfolio,
@@ -18,7 +16,7 @@
    justify-content: center;
    align-items: center;
    font-weight: 800;
-   padding: 1.5rem;
+   padding: 1rem;
 }
 
 .icon {

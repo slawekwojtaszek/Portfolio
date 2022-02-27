@@ -1,12 +1,12 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Link } from "react-router-dom";
-import QuickAccessBox from "./pages/QuickAccessBox";
+import QuickAccessBox from "./components/QuickAccessBox";
 import { useState } from "react";
-import Header from "./pages/Header";
-import Navbar from "./pages/Navbar";
-import Portfolio from "./pages/Portfolio";
-import Footer from "./pages/Footer";
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
+import Portfolio from "./components/Portfolio";
+import Footer from "./components/Footer";
 
 function App(props) {
    const [isClose, setisClose] = useState(true);
@@ -17,7 +17,7 @@ function App(props) {
 
    return (
       <>
-         <div className='wrapper'>
+         <div className='wrapper '>
             <Router>
                <Routes>
                   <Route

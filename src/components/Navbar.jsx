@@ -15,7 +15,7 @@ function Navbar({ isClose, onClick, myKlasa }) {
       <>
          <nav>
             <div className='top-container'>
-               <Link to='/'>
+               <Link to='/' onClick={!isClose ? onClick : null}>
                   <div className='logo'>
                      <h1>voytashek.</h1>
                   </div>{" "}
