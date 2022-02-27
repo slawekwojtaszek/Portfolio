@@ -1,0 +1,32 @@
+.box {
+   height: 10vh;
+   width: 100vw;
+   background-color: #0069ed;
+}
+
+.box {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+}
+
+.portfolio,
+.skills,
+.me {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: 800;
+   padding: 1.5rem;
+}
+
+.icon {
+   font-size: 1.4rem;
+   padding: 0 0.5rem;
+   color: white;
+}
+
+.des {
+   color: white;
+}

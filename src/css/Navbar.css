@@ -8,26 +8,17 @@
 /* Navbar */
 
 nav {
-   width: 100vw;
-   height: 15vh;
-   /* box-shadow: 1px 1px 1px #ffffff; */
-}
-
-.nav-container {
    height: 10vh;
    background-color: #000;
+   /* border: 3px solid whitesmoke; */
 }
 
 .top-container {
+   height: 90%;
    background-color: #000;
    display: flex;
    align-items: center;
    justify-content: space-between;
-}
-
-.logo,
-.icon-container {
-   padding: 1rem;
 }
 
 /* Logo */
@@ -58,9 +49,10 @@ nav {
    flex-direction: column;
    justify-content: space-around;
    align-content: center;
-   height: 92vh;
+   height: 91vh;
    width: 100%;
-   background-color: rgb(232, 232, 232);
+   /* background-color: rgb(232, 232, 232); */
+   background-color: #000;
    transition: all 0.3s ease-in-out;
    z-index: 3;
 }
@@ -77,6 +69,9 @@ nav {
 }
 
 li {
+   display: flex;
+   justify-content: center;
+   align-items: center;
    width: 100%;
    padding: 0.5rem 0rem;
    margin: 0.5rem 0.5rem;
@@ -89,17 +84,24 @@ li {
 .bottom-container a {
    display: block;
    border-radius: 5px;
-   width: 35%;
+   width: 30%;
    margin: 0.1rem auto;
    padding: 0.3rem 0.4rem;
-   color: rgba(33, 33, 33, 0.884);
+   color: rgba(252, 252, 252, 0.884);
    font-size: 1.8rem;
-   text-decoration: underline;
+   border-bottom: 2px solid rgb(255, 255, 255);
+   padding-bottom: 3px;
+   transition: 0.4s;
+}
+
+.bottom-container a:hover {
+   width: 45%;
 }
 
 /* Technologies Used */
 
 .technologies-mobile {
+   /* background-color: #000; */
    /* margin: 1rem auto 1rem auto; */
    display: flex;
    flex-direction: column;
@@ -109,12 +111,18 @@ li {
    height: 20%;
 }
 
+.technologies-mobile h1 {
+   color: white;
+   font-weight: 600;
+}
+
 .react,
 .js,
 .css,
 .html,
 .type-script,
 .figma {
+   color: white;
    font-size: 1.7rem;
    padding: 1rem;
 }

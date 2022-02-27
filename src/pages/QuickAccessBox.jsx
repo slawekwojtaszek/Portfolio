@@ -1,4 +1,5 @@
 import React from "react";
+import "../css/QuickAccessBox.css";
 import { Link } from "react-router-dom";
 import { FaEye } from "react-icons/fa";
 import { FaListUl } from "react-icons/fa";

@@ -8,7 +8,7 @@ function Header() {
    return (
       <>
          <header>
-            <div className='container'>
+            <div className='header-container'>
                <h1>Welcome to where Web is another form of art. </h1>
             </div>
             <QuickAccessBox />

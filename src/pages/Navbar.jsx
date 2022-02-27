@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../css/Navbar.css";
 import {
    SiReact,
@@ -13,7 +13,7 @@ import {
 function Navbar({ isClose, onClick, myKlasa }) {
    return (
       <>
-         <nav className='nav-container'>
+         <nav>
             <div className='top-container'>
                <Link to='/'>
                   <div className='logo'>
@@ -36,24 +36,32 @@ function Navbar({ isClose, onClick, myKlasa }) {
                }>
                <ul className='list'>
                   <li>
-                     {" "}
-                     <a href='#'>Home</a>
+                     <Link to='/' onClick={onClick}>
+                        Home
+                     </Link>
                   </li>
                   <li>
-                     {" "}
-                     <a href=''>Projects</a>
+                     <Link
+                        to='/portfolio'
+                        activeClassName='active'
+                        onClick={onClick}>
+                        Portfolio
+                     </Link>
                   </li>
                   <li>
-                     {" "}
-                     <a href='#'>CV</a>
+                     <Link to='/' onClick={onClick}>
+                        Skills
+                     </Link>
                   </li>
                   <li>
-                     {" "}
-                     <a href='#'>About</a>
+                     <Link to='/' onClick={onClick}>
+                        About
+                     </Link>
                   </li>
                   <li>
-                     {" "}
-                     <a href='#'>Contact</a>
+                     <Link to='/' onClick={onClick}>
+                        Contact
+                     </Link>
                   </li>
                </ul>
 

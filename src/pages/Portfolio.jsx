@@ -1,14 +1,26 @@
 import React from "react";
 import Navbar from "./Navbar";
 import "../css/Portfolio.css";
-import QuickAccessBox from "./QuickAccessBox";
+import Footer from "./Footer";
+import PortfolioItem from "./PortfolioItem";
+import { SiGithub } from "react-icons/si";
+import { ImLink } from "react-icons/im";
+import myTest from "../img/iphone.png";
 
 function Portfolio({ isClose, onClick }) {
    return (
       <>
-         <div className='portfolio-container'>
-            <Navbar onClick={onClick} isClose={isClose} />
+         <Navbar onClick={onClick} isClose={isClose} />
+         <div className='portfolio-container '>
+            <PortfolioItem
+               title='iPhone Timewatch'
+               descripction='The app written in Vanilla JS'
+               icon1={<SiGithub />}
+               icon2={<ImLink />}
+               bgphoto={myTest}
+            />
          </div>
+         <Footer />
       </>
    );
 }

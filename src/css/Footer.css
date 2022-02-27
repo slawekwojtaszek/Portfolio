@@ -1,6 +1,13 @@
 footer {
-   background-color: black;
-   height: 40vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #000;
+   height: 10vh;
    width: 100vw;
-   margin-bottom: -10rem;
+}
+
+footer h1 {
+   font-size: 2rem;
+   color: white;
 }
