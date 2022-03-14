@@ -10,13 +10,11 @@ function Header() {
          <header>
             <div className='header-container scale-up-center'>
                <h1>I believe that Web is just another form of art.</h1>
-               <h2>Attempting Front End Developer / UX Designer</h2>
+               <h2>Pursuing Front End Developer / UX Designer path</h2>
             </div>
             <div className='container'>
                <div className='boxes'>
                   <div className='box1 scrolls'>BOX1</div>
-                  <div className='box2 scrolls'>BOX2</div>
-                  <div className='box3 scrolls'>BOX3</div>
                </div>
             </div>
 

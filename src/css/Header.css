@@ -23,7 +23,7 @@
 
 .header-container h2 {
    position: absolute;
-   margin: 2rem 0;
+   margin: 1rem;
    padding: 2rem;
    top: 20%;
    font-family: "Kanit", sans-serif;
@@ -32,32 +32,26 @@
    font-weight: 600;
 }
 
-/* .boxes {
-   margin: 0 auto;
+.boxes {
    position: absolute;
    display: flex;
    justify-items: center;
    align-content: center;
-   top: 60%;
-   left: 0%;
+   top: 65%;
+   left: 20%;
    height: 20vh;
-   width: 80vw;
+   width: 60vw;
 }
 
-.box1,
-.box2,
-.box3 {
+.box1 {
    margin: 0.5rem;
    width: 100%;
-   border: 2px solid white;
    border-radius: 5px;
 }
 
-.box1,
-.box2,
-.box3 {
+.box1 {
    background-image: url("../img/bgmedium.jpg");
    background-repeat: no-repeat;
    background-position: center;
    background-size: 100% 100%;
-} */
+}
