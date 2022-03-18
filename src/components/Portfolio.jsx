@@ -27,7 +27,7 @@ function Portfolio({ isClose, onClick }) {
          <div className='portfolio-container '>
             <PortfolioItem
                title='iPhone Timewatch'
-               icon3={<SiJavascript className='ijs' />}
+               icon3={<SiJavascript />}
                live={"/"}
                github={"https://github.com/slawekwojtaszek"}
                icon1={<SiGithub />}
@@ -40,7 +40,7 @@ function Portfolio({ isClose, onClick }) {
             />
             <PortfolioItem
                title='Daily Planner'
-               icon3={<SiJavascript className='ijs' />}
+               icon3={<SiJavascript />}
                live={"/"}
                github={"https://github.com/slawekwojtaszek"}
                icon1={<SiGithub />}
@@ -49,9 +49,8 @@ function Portfolio({ isClose, onClick }) {
                summary={"siemka"}
                descripction={`The app is a simply daily planner where you can add some tasks, mark them as completed, delete them and search`}
             />
-            <QuickAccessBox className='stick' />
          </div>
-
+         <QuickAccessBox className='stick' />
          <Footer />
       </>
    );

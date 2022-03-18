@@ -15,26 +15,26 @@ function PortfolioItem({
 }) {
    return (
       <section className='single-item slide-in-right '>
-         <div className='single-item-des'>
+         <div className='single-item-header'>
             {" "}
-            <div className='single-item-des-text'>
+            <div className='single-item-header-text'>
                <div className='container'>
                   <h1>{title}</h1>
-                  <h2 className='ii'>{icon3}</h2>
+                  <h2 className='icon'>{icon3}</h2>
                </div>
                <div className='single-item-links'>
                   <Link to={live}>
                      <div className='live'>
                         <div className='single-item-icon'>{icon2}</div>
-                        <div className='des'>
+                        <div className='button-des'>
                            <p>See Live</p>
                         </div>
                      </div>
                   </Link>
                   <a target='_blank' href={github}>
-                     <div className='live'>
+                     <div className='git'>
                         <div className='single-item-icon'>{icon1}</div>
-                        <div className='des'>
+                        <div className='button-des'>
                            <p> See on Github</p>
                         </div>
                      </div>
@@ -45,7 +45,7 @@ function PortfolioItem({
          <div className='single-item-photo'>
             <img src={bgphoto} alt='' />
          </div>
-         <div className='single-item-fe'>
+         <div className='single-item-info'>
             <h1>{summary}</h1>
             <p>{descripction}</p>
          </div>

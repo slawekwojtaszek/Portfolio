@@ -9,7 +9,7 @@ function Header() {
       <>
          <header>
             <div className='header-container scale-up-center'>
-               <h1>I believe that Web is just another form of art.</h1>
+               <h1>Blah blah blah blaah blablablaaah</h1>
                <h2>Pursuing Front End Developer / UX Designer path</h2>
             </div>
             <div className='container'>
