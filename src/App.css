@@ -1,3 +1,47 @@
+/* Night Mode */
+
+.sun-mode,
+.sun-mode .skills-container,
+.sun-mode .wrapper,
+.sun-mode .hard-skills,
+.sun-mode .top-container,
+.sun-mode .bottom-container {
+   background-color: yellow;
+}
+.night-mode,
+.night-mode .skills-container,
+.night-mode .wrapper,
+.night-mode .hard-skills,
+.night-mode .top-container,
+.night-mode .bottom-container,
+.night-mode .single-item-des-text {
+   background-color: white;
+}
+
+.night-mode .bottom-container a,
+.night-mode .logo h1,
+.night-mode .top-container,
+.night-mode .bottom-container {
+   color: black;
+}
+
+.night-mode .menu-btn__burger::before,
+.night-mode .menu-btn__burger::after,
+.night-mode .menu-btn__burger,
+.night-mode .header-container {
+   background-color: black;
+}
+
+.night-mode .single-item {
+   box-shadow: 0 0 10px 5px rgb(220, 220, 220);
+}
+
+.night-mode .item {
+   box-shadow: 0 0 10px 5px rgb(220, 220, 220);
+}
+
+/* Media Queires */
+
 @media screen and (min-width: 501px) {
    .bottom-container.onOff {
       margin-left: 100rem;
@@ -53,4 +97,14 @@
       -webkit-transform: scale(1);
       transform: scale(1);
    }
+}
+
+.night {
+   position: absolute;
+   top: 0;
+   width: 70px;
+   height: 70px;
+   background-color: yellow;
+   border-radius: 5px;
+   z-index: 10;
 }

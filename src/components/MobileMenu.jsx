@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "../css/Navbar.css";
 import "../css/MobileMenu.css";
@@ -12,6 +13,15 @@ import {
 } from "react-icons/si";
 
 function MobileMenu({ isClose, onClick }) {
+   const [isNight, setisNight] = useState(false);
+
+   const nightMode = () => {
+      if (!isNight) {
+         setisNight((isNight) => isNight);
+         document.body.classList.toggle("night-mode");
+      }
+   };
+
    return (
       <div className={isClose ? "bottom-container onOff " : "bottom-container"}>
          <ul className='list'>
@@ -64,6 +74,9 @@ function MobileMenu({ isClose, onClick }) {
                   <SiFigma />
                </div>
             </div>
+         </div>
+         <div className='night' onClick={nightMode}>
+            NIGHT
          </div>
       </div>
    );

@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import QuickAccessBox from "./QuickAccessBox";
 import "../css/Skills.css";
+import SingleSkill from "./SingleSkill";
 import {
    SiReact,
    SiJavascript,
@@ -19,127 +20,69 @@ function Skills({ onClick, isClose }) {
             <div className='top'>
                <div className='hard-skills'>
                   <ul>
-                     <div className='item react'>
-                        <div className='top-item'>
-                           <div className='logo'>
-                              <SiReact />
-                           </div>
-                           <div className='name'>React</div>
-                        </div>
-
-                        <div className='bottom-item'>
-                           <h2>What do I know so far?</h2>
-                           <div className='list-element'>
-                              <div className='dot'></div>
-                              <p>
-                                 Fundamentals like JSX, Virtual DOM, Components,
-                                 State, Props, Events.
-                              </p>
-                           </div>
-
-                           <div className='list-element'>
-                              <div className='dot'></div>
-                              <p>Importance of seperation the concerns</p>
-                           </div>
-
-                           <div className='list-element'>
-                              <div className='dot'></div>
-                              <p>
-                                 Functional and Class components, understanding{" "}
-                                 <span className='mark'>this</span> problem
-                              </p>
-                           </div>
-
-                           <div className='list-element'>
-                              <div className='dot'></div>
-                              <p>Use of React Hooks</p>
-                           </div>
-                           <div className='list-element'>
-                              <div className='dot'></div>
-                              <p>Fetch data from REST API</p>
-                           </div>
-                           <div className='list-element'>
-                              <div className='dot'></div>
-                              <p>State management wiht Props and Context</p>
-                           </div>
-                           <div className='list-element'>
-                              <div className='dot'></div>
-                              <p>Use of Routes and React Router DOM</p>
-                           </div>
-                           <div className='list-element'>
-                              <div className='dot'></div>
-                              <p>Understanding of Redux</p>
-                           </div>
-
-                           <div className='list-element'>
-                              <div className='dot'></div>{" "}
-                              <p>Basic knowledge od GraphQL</p>
-                           </div>
-                        </div>
-                     </div>
-                     <div className='item javascript'>
-                        <div className='top-item'>
-                           <div className='logo'>
-                              <SiJavascript />
-                           </div>
-                           <div className='name'>Javascript</div>
-                        </div>
-
-                        <div className='bottom-item'>
-                           <h2>What do I know so far?</h2>
-                           <div className='list-element'>
-                              <div className='dot'></div>
-                              <p>
-                                 Fundamentals like JSX, Virtual DOM, Components,
-                                 State, Props, Events.
-                              </p>
-                           </div>
-
-                           <div className='list-element'>
-                              <div className='dot'></div>
-                              <p>Importance of seperation the concerns</p>
-                           </div>
-
-                           <div className='list-element'>
-                              <div className='dot'></div>
-                              <p>
-                                 Functional and Class components, understanding{" "}
-                                 <span className='mark'>this</span> problem
-                              </p>
-                           </div>
-
-                           <div className='list-element'>
-                              <div className='dot'></div>
-                              <p>Use of React Hooks</p>
-                           </div>
-                           <div className='list-element'>
-                              <div className='dot'></div>
-                              <p>Fetch data from REST API</p>
-                           </div>
-                           <div className='list-element'>
-                              <div className='dot'></div>
-                              <p>State management wiht Props and Context</p>
-                           </div>
-                           <div className='list-element'>
-                              <div className='dot'></div>
-                              <p>Use of Routes and React Router DOM</p>
-                           </div>
-                           <div className='list-element'>
-                              <div className='dot'></div>
-                              <p>Understanding of Redux</p>
-                           </div>
-
-                           <div className='list-element'>
-                              <div className='dot'></div>{" "}
-                              <p>Basic knowledge od GraphQL</p>
-                           </div>
-                        </div>
-                     </div>
+                     <SingleSkill
+                        className={"react"}
+                        icon={<SiReact />}
+                        name={"React"}
+                        list1={`Fundamentals of JSX, Virtual DOM, Components, State, Props, Events.`}
+                        list2={`Importance of seperation the concerns`}
+                        list3={`  Functional and Class components, understanding
+                    this problem`}
+                        list4={`Use of React Hooks`}
+                        list5={`Fetch data from REST API`}
+                        list6={`State management wiht Props and Context`}
+                        list7={`Use of Routes and React Router DOM`}
+                        list8={`Understanding of Redux`}
+                        list9={`Basic knowledge od GraphQL`}
+                     />
+                     <SingleSkill
+                        className={"javascript"}
+                        icon={<SiJavascript />}
+                        name={"Javascript"}
+                        list1={`Data structure, data types, variablaes`}
+                        list2={`Multiple methods inlcuding the most essential ones like map(), filter() or `}
+                        list3={``}
+                        list4={`Different type of functions including Arrow Function and Closures`}
+                        list5={`Understanding scope`}
+                        list6={``}
+                        list7={``}
+                        list8={``}
+                        list9={``}
+                     />
+                     <SingleSkill
+                        className={"css"}
+                        icon={<SiCss3 />}
+                        name={"CSS 3"}
+                        list1={`Data structure, data types, variablaes`}
+                        list2={`Multiple methods inlcuding the most essential ones like map(), filter() or `}
+                        list3={``}
+                        list4={`Different type of functions including Arrow Function and Closures`}
+                        list5={`Understanding scope`}
+                        list6={``}
+                        list7={``}
+                        list8={``}
+                        list9={``}
+                     />
+                     <SingleSkill
+                        className={"html"}
+                        icon={<SiHtml5 />}
+                        name={"HTML 5"}
+                        list1={`Data structure, data types, variablaes`}
+                        list2={`Multiple methods inlcuding the most essential ones like map(), filter() or `}
+                        list3={``}
+                        list4={`Different type of functions including Arrow Function and Closures`}
+                        list5={`Understanding scope`}
+                        list6={``}
+                        list7={``}
+                        list8={``}
+                        list9={``}
+                     />
                   </ul>
                </div>
             </div>
             <div className='bottom'>BOTTOM</div>
          </div>
+
          <QuickAccessBox />
       </>
    );

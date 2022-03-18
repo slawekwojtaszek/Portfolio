@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../css/Navbar.css";
 import MobileMenu from "./MobileMenu";
 
-function Navbar({ isClose, onClick }) {
+function Navbar({ isClose, onClick, newButton }) {
    return (
       <>
          <nav>
@@ -22,7 +22,11 @@ function Navbar({ isClose, onClick }) {
                </div>
             </div>
          </nav>
-         <MobileMenu isClose={isClose} onClick={onClick} />
+         <MobileMenu
+            isClose={isClose}
+            onClick={onClick}
+            newButton={newButton}
+         />
       </>
    );
 }

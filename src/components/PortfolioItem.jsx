@@ -5,12 +5,13 @@ import { Link } from "react-router-dom";
 function PortfolioItem({
    title,
    icon3,
-   descri,
+   descripction,
    live,
    github,
    icon1,
    icon2,
    bgphoto,
+   summary,
 }) {
    return (
       <section className='single-item slide-in-right '>
@@ -24,17 +25,19 @@ function PortfolioItem({
                <div className='single-item-links'>
                   <Link to={live}>
                      <div className='live'>
-                        <div className='single-item-icon'>{icon1}</div>
-                        <div className='des'>See Live</div>
+                        <div className='single-item-icon'>{icon2}</div>
+                        <div className='des'>
+                           <p>See Live</p>
+                        </div>
                      </div>
                   </Link>
-
                   <a target='_blank' href={github}>
-                     {" "}
                      <div className='live'>
-                        <div className='single-item-icon'>{icon2}</div>
-                        <div className='des'>See on Github</div>
-                     </div>{" "}
+                        <div className='single-item-icon'>{icon1}</div>
+                        <div className='des'>
+                           <p> See on Github</p>
+                        </div>
+                     </div>
                   </a>
                </div>
             </div>
@@ -43,8 +46,8 @@ function PortfolioItem({
             <img src={bgphoto} alt='' />
          </div>
          <div className='single-item-fe'>
-            <h1>Descripction</h1>
-            <p>{descri}</p>
+            <h1>{summary}</h1>
+            <p>{descripction}</p>
          </div>
       </section>
    );

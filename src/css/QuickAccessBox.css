@@ -17,14 +17,16 @@
    align-items: center;
    font-weight: 800;
    padding: 1rem;
+   cursor: pointer;
 }
 
 .icon {
-   font-size: 1.4rem;
+   font-size: 1.7rem;
    padding: 0 0.5rem;
    color: white;
 }
 
-.des {
+div.des {
+   font-size: 0.8rem;
    color: white;
 }

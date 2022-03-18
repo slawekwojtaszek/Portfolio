@@ -7,22 +7,20 @@ import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import MobileMenu from "./components/MobileMenu";
 import Portfolio from "./components/Portfolio";
-import Skills from "./components/Skills";
 import About from "./components/About";
+import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 
 function App(props) {
    const [isClose, setisClose] = useState(true);
-
+   document.body.style.overflowX = "hidden";
    const newButton = () => {
-      if (isClose) {
-         document.body.style.overflowY = "hidden";
-         document.body.style.overflowX = "hidden";
-      } else if (!isClose) {
-         document.body.style.overflowY = "auto";
-         document.body.style.overflowX = "hidden";
-      }
       setisClose((isClose) => !isClose);
+      if (!isClose) {
+         document.body.style.overflowY = "auto";
+      } else {
+         document.body.style.overflowY = "hidden";
+      }
    };
 
    return (

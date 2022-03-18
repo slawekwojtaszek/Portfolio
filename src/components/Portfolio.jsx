@@ -33,7 +33,8 @@ function Portfolio({ isClose, onClick }) {
                icon1={<SiGithub />}
                icon2={<ImLink />}
                bgphoto={myTest}
-               descri={`This is a clone of native Apple's Timewatch app on the iPhones.
+               summary={"Vanilla Javascript App"}
+               descripction={`This is a clone of native Apple's Timewatch app on the iPhones.
                The app allowes you to record multiple laps as well as start,
                pause, stop and clear time.`}
             />
@@ -45,7 +46,8 @@ function Portfolio({ isClose, onClick }) {
                icon1={<SiGithub />}
                icon2={<ImLink />}
                bgphoto={myTest2}
-               descri={`The app is a simply daily planner where you can add some tasks, mark them as completed, delete them and search`}
+               summary={"siemka"}
+               descripction={`The app is a simply daily planner where you can add some tasks, mark them as completed, delete them and search`}
             />
             <QuickAccessBox className='stick' />
          </div>
