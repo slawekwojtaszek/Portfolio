@@ -67,27 +67,34 @@
 .window,
 .git,
 .live,
-.button-des .single-item-icon {
+.single-item-icon {
    display: flex;
    justify-content: center;
    align-items: center;
    color: white;
 }
 
-.button-des,
 .live,
 .git {
    background-color: #0069ed;
    font-weight: 900;
-   padding: 0.4rem;
+   padding: 1rem;
    margin: 0.3rem;
    font-size: 1.2rem;
    border-radius: 4px;
+   transition: 0.4s;
+}
+
+.live:hover,
+.git:hover {
+   transform: scale(1.05);
+   background-color: #0354b8;
 }
 
 .live p,
 .git p {
-   font-size: 0.7rem;
+   margin: 0.3rem 0.7rem;
+   font-size: 0.8rem;
 }
 
 /* Photo Middle */

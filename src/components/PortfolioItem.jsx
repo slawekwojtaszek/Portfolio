@@ -26,17 +26,13 @@ function PortfolioItem({
                   <Link to={live}>
                      <div className='live'>
                         <div className='single-item-icon'>{icon2}</div>
-                        <div className='button-des'>
-                           <p>See Live</p>
-                        </div>
+                        <p>See Live</p>
                      </div>
                   </Link>
                   <a target='_blank' href={github}>
                      <div className='git'>
                         <div className='single-item-icon'>{icon1}</div>
-                        <div className='button-des'>
-                           <p> See on Github</p>
-                        </div>
+                        <p> See on Github</p>
                      </div>
                   </a>
                </div>
