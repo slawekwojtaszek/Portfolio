@@ -31,7 +31,7 @@ function MobileMenu({ isClose, onClick }) {
                </Link>
             </li>
             <li>
-               <Link to='/' onClick={onClick}>
+               <Link to='/about' onClick={onClick}>
                   About
                </Link>
             </li>

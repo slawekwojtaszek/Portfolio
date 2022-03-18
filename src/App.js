@@ -8,17 +8,21 @@ import Navbar from "./components/Navbar";
 import MobileMenu from "./components/MobileMenu";
 import Portfolio from "./components/Portfolio";
 import Skills from "./components/Skills";
+import About from "./components/About";
 import Footer from "./components/Footer";
 
 function App(props) {
    const [isClose, setisClose] = useState(true);
+
    const newButton = () => {
-      setisClose((isClose) => !isClose);
       if (isClose) {
-         document.body.style.overflow = "hidden";
-      } else {
-         document.body.style.overflow = "auto";
+         document.body.style.overflowY = "hidden";
+         document.body.style.overflowX = "hidden";
+      } else if (!isClose) {
+         document.body.style.overflowY = "auto";
+         document.body.style.overflowX = "hidden";
       }
+      setisClose((isClose) => !isClose);
    };
 
    return (
@@ -40,6 +44,10 @@ function App(props) {
                   <Route
                      path='/skills'
                      element={<Skills onClick={newButton} isClose={isClose} />}
+                  />
+                  <Route
+                     path='/about'
+                     element={<About onClick={newButton} isClose={isClose} />}
                   />
                </Routes>
                <Routes>
