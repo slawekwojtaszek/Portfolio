@@ -75,9 +75,6 @@ function MobileMenu({ isClose, onClick }) {
                </div>
             </div>
          </div>
-         <div className='night' onClick={nightMode}>
-            NIGHT
-         </div>
       </div>
    );
 }
