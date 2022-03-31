@@ -7,7 +7,8 @@
 .light-mode .top-container,
 .light-mode .bottom-container,
 .light-mode .single-item-des-text,
-.light-mode .header-container.container {
+.light-mode .header-container.container,
+.light-mode .about-container {
    background-color: white;
 }
 
@@ -15,15 +16,23 @@
 .light-mode .logo h1,
 .light-mode .top-container,
 .light-mode .bottom-container,
-.light-mode .header-container h1 {
+.light-mode .header-container h1,
+.light-mode .question-cont,
+.light-mode .about-container {
    color: black;
 }
 
 .light-mode .menu-btn__burger::before,
 .light-mode .menu-btn__burger::after,
 .light-mode .menu-btn__burger,
-.light-mode {
+.light-mode,
+.light-mode .question-cont,
+.light-mode .answer-cont {
    background-color: black;
+}
+.light-mode .question-cont,
+.light-mode .answer-cont {
+   color: white;
 }
 
 .light-mode .single-item {
@@ -32,6 +41,10 @@
 
 .light-mode .item {
    box-shadow: 0 0 10px 5px rgb(220, 220, 220);
+}
+
+.light-mode .answer-cont {
+   border-top: 2px solid rgb(255, 255, 255);
 }
 
 /* Media Queires */

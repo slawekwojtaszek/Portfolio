@@ -18,49 +18,70 @@ function SingleSkill({
 }) {
    return (
       <div>
-         {" "}
          <div className={`item ${className}`}>
             <div className='top-item'>
                <div className='logo'>{icon}</div>
                <div className='name'>{name}</div>
             </div>
             <div className='bottom-item'>
-               <h2>What have I learnt so far?</h2>
-               <div className='list-element'>
-                  <div className='dot'></div>
-                  <p>{list1}</p>
-               </div>
-               <div className='list-element'>
-                  <div className='dot'></div>
-                  <p>{list2}</p>
-               </div>
-               <div className='list-element'>
-                  <div className='dot'></div>
-                  <p>{list3}</p>
-               </div>
-               <div className='list-element'>
-                  <div className='dot'></div>
-                  <p>{list4}</p>
-               </div>
-               <div className='list-element'>
-                  <div className='dot'></div>
-                  <p>{list5}</p>
-               </div>
-               <div className='list-element'>
-                  <div className='dot'></div>
-                  <p>{list6}</p>
-               </div>
-               <div className='list-element'>
-                  <div className='dot'></div>
-                  <p>{list7}</p>
-               </div>
-               <div className='list-element'>
-                  <div className='dot'></div>
-                  <p>{list8}</p>
-               </div>
-               <div className='list-element'>
-                  <div className='dot'></div>
-                  <p>{list9}</p>
+               {/* <h2>What have I learnt so far?</h2> */}
+
+               {list1 ? (
+                  <div className='list-element'>
+                     <div className='dot'></div>
+                     <p>{list1}</p>
+                  </div>
+               ) : null}
+               {list2 ? (
+                  <div className='list-element'>
+                     <div className='dot'></div>
+                     <p>{list2}</p>
+                  </div>
+               ) : null}
+               {list3 ? (
+                  <div className='list-element'>
+                     <div className='dot'></div>
+                     <p>{list3}</p>
+                  </div>
+               ) : null}
+               {list4 ? (
+                  <div className='list-element'>
+                     <div className='dot'></div>
+                     <p>{list4}</p>
+                  </div>
+               ) : null}
+               {list5 ? (
+                  <div className='list-element'>
+                     <div className='dot'></div>
+                     <p>{list5}</p>
+                  </div>
+               ) : null}
+               {list6 ? (
+                  <div className='list-element'>
+                     <div className='dot'></div>
+                     <p>{list6}</p>
+                  </div>
+               ) : null}
+               {list7 ? (
+                  <div className='list-element'>
+                     <div className='dot'></div>
+                     <p>{list7}</p>
+                  </div>
+               ) : null}
+               {list8 ? (
+                  <div className='list-element'>
+                     <div className='dot'></div>
+                     <p>{list8}</p>
+                  </div>
+               ) : null}
+               {list9 ? (
+                  <div className='list-element'>
+                     <div className='dot'></div>
+                     <p>{list9}</p>
+                  </div>
+               ) : null}
+               <div className='skill-type'>
+                  <p>Soft Skill</p>
                </div>
             </div>
          </div>

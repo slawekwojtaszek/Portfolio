@@ -19,10 +19,66 @@
 }
 
 .hard-skills {
+   display: flex;
    height: 100%;
    /* border: 3px solid green; */
 }
+.hard-skills.hide {
+   display: none;
+}
 
+.soft-skills {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.soft-skills.hide {
+   display: none;
+}
+
+/* Buttons Filter Hard and Soft Skills */
+
+.buttons {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.buttons .btn {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 1rem 2rem;
+   margin: 1rem;
+   border-radius: 6px;
+   background-color: #0069ed;
+   color: white;
+   font-weight: 900;
+}
+
+.buttons .btn.soft {
+   background-color: #0b3e6c;
+}
+.buttons .btn.hard {
+   background-color: #0b3e6c;
+}
+
+.skill-type {
+   margin: 2rem 0 0 0;
+   width: 100%;
+   /* background-color: #062846; */
+   color: #fefefe;
+   border-radius: 5px;
+}
+
+.bottom-item .skill-type p {
+   text-align: center;
+   font-size: 1rem;
+   font-weight: 900;
+   text-decoration: wavy;
+}
 .top-item,
 .item,
 .bottom-item {
@@ -33,9 +89,9 @@
 
 .item {
    flex-direction: column;
-   margin: 2rem auto 3rem auto;
+   margin: 1rem auto 1rem auto;
    padding: 0.2rem;
-   max-width: 70%;
+   max-width: 80%;
    height: 80%;
    border-radius: 10px;
    transition: 0.5s ease-in-out;
@@ -58,7 +114,8 @@
 }
 
 .top-item .name {
-   font-size: 2rem;
+   padding-left: 1rem;
+   font-size: 1.6rem;
 }
 
 .bottom-item {
@@ -148,6 +205,17 @@
 
 .item.css .bottom-item {
    background-color: rgba(37, 74, 221, 0.8);
+}
+
+.item.soft:hover {
+   box-shadow: 0 0 10px 3px rgb(52, 221, 37);
+}
+.item.soft .top-item {
+   background-color: rgb(6, 6, 6);
+}
+
+.item.soft .bottom-item {
+   background-color: #0b3e6c;
 }
 
 /* later */
