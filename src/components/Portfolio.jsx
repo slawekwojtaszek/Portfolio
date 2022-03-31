@@ -25,7 +25,6 @@ import {
 function Portfolio({ isClose, onClick }) {
    return (
       <>
-         <Navbar onClick={onClick} isClose={isClose} />
          <div className='portfolio-container '>
             <PortfolioItem
                title='Flashcards'

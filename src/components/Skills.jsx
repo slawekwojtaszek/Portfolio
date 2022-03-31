@@ -1,4 +1,5 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import QuickAccessBox from "./QuickAccessBox";
 import "../css/Skills.css";
@@ -11,11 +12,37 @@ import {
    SiTypescript,
    SiFigma,
 } from "react-icons/si";
+import Accordion from "./Accordion";
 
 function Skills({ onClick, isClose }) {
+   const data = [
+      {
+         question: "How can I help your team?",
+         answer: "odpowiedz1",
+         id: 0,
+      },
+      {
+         question: "pytanie2",
+         answer: "odpowiedz2",
+         id: 1,
+      },
+      {
+         question: "pytanie3",
+         answer: "odpowiedz3",
+         id: 2,
+      },
+      {
+         question: "pytanie3",
+         answer: "odpowiedz3",
+         id: 2,
+      },
+   ];
    return (
       <>
-         <Navbar onClick={onClick} isClose={isClose} />
+         {data.map(({ question, answer, id }) => (
+            <Accordion key={id} title={question} content={answer} />
+         ))}
+
          <div className='skills-container slide-in-right'>
             <div className='top'>
                <div className='hard-skills'>

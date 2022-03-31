@@ -6,21 +6,23 @@
 .light-mode .hard-skills,
 .light-mode .top-container,
 .light-mode .bottom-container,
-.light-mode .single-item-des-text {
+.light-mode .single-item-des-text,
+.light-mode .header-container.container {
    background-color: white;
 }
 
 .light-mode .bottom-container a,
 .light-mode .logo h1,
 .light-mode .top-container,
-.light-mode .bottom-container {
+.light-mode .bottom-container,
+.light-mode .header-container h1 {
    color: black;
 }
 
 .light-mode .menu-btn__burger::before,
 .light-mode .menu-btn__burger::after,
 .light-mode .menu-btn__burger,
-.light-mode .header-container {
+.light-mode {
    background-color: black;
 }
 

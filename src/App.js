@@ -27,11 +27,8 @@ function App(props) {
       <>
          <div className='wrapper '>
             <Router>
+               <Navbar onClick={newButton} isClose={isClose} />
                <Routes>
-                  <Route
-                     path='/'
-                     element={<Navbar onClick={newButton} isClose={isClose} />}
-                  />
                   <Route path='/' element={<Header />} />
                   <Route
                      path='/portfolio'
@@ -40,16 +37,14 @@ function App(props) {
                      }
                   />
                   <Route
-                     path='/skills'
-                     element={<Skills onClick={newButton} isClose={isClose} />}
-                  />
-                  <Route
                      path='/about'
                      element={<About onClick={newButton} isClose={isClose} />}
                   />
-               </Routes>
-               <Routes>
                   <Route path='/' element={<Header />} />
+                  <Route
+                     path='/skills'
+                     element={<Skills onClick={newButton} isClose={isClose} />}
+                  />
                </Routes>
             </Router>
          </div>

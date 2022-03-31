@@ -6,7 +6,6 @@ import "../css/About.css";
 function About({ onClick, isClose }) {
    return (
       <>
-         <Navbar onClick={onClick} isClose={isClose} />{" "}
          <div className='about-container slide-in-right'>
             <div className='top-section'>
                <div className='container1'>

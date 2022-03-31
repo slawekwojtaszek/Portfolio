@@ -32,7 +32,7 @@ function PortfolioItem({
                   <a target='_blank' href={github}>
                      <div className='git'>
                         <div className='single-item-icon'>{icon1}</div>
-                        <p> See on Github</p>
+                        <p>Github</p>
                      </div>
                   </a>
                </div>

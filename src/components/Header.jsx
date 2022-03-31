@@ -11,12 +11,13 @@ function Header() {
             <div className='header-container scale-up-center'>
                <h1>Blah blah blah blaah blablablaaah</h1>
                <h2>Pursuing Front End Developer / UX Designer path</h2>
+               <div className='graphic'></div>
             </div>
-            <div className='container'>
-               <div className='boxes'>
-                  <div className='box1 scrolls'>BOX1</div>
-               </div>
-            </div>
+
+            {/* <div className='container'>
+               <div className='descripction'>The newest project</div>
+               <div className='thumb'></div>
+            </div> */}
 
             <QuickAccessBox />
          </header>
