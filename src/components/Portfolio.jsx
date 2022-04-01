@@ -73,7 +73,7 @@ function Portfolio({ isClose, onClick }) {
                descripction={`The app is a simply daily planner where you can add tasks, mark them as completed, delete them and search for them. Also, you can change the main theme coolour using sliders. All wrritten in Vanilla Javascript`}
             />
          </div>
-         <QuickAccessBox className='stick' />
+         <QuickAccessBox />
          <Footer />
       </>
    );

@@ -7,24 +7,11 @@
    background-color: black;
 }
 
-.top {
-   height: 50%;
-   width: 100%;
-   /* border: 2px solid red; */
-}
-.bottom {
-   height: 50%;
-   width: 100%;
-   border: 2px solid yellow;
-}
-
 .hard-skills {
    display: flex;
-   height: 100%;
-   /* border: 3px solid green; */
-}
-.hard-skills.hide {
-   display: none;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
 }
 
 .soft-skills {
@@ -34,8 +21,8 @@
    flex-direction: column;
 }
 
-.soft-skills.hide {
-   display: none;
+.space {
+   height: 10vh;
 }
 
 /* Buttons Filter Hard and Soft Skills */
@@ -44,31 +31,12 @@
    display: flex;
    justify-content: center;
    align-items: center;
-}
-
-.buttons .btn {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   padding: 1rem 2rem;
-   margin: 1rem;
-   border-radius: 6px;
-   background-color: #0069ed;
-   color: white;
-   font-weight: 900;
-}
-
-.buttons .btn.soft {
-   background-color: #0b3e6c;
-}
-.buttons .btn.hard {
-   background-color: #0b3e6c;
+   padding: 1rem;
 }
 
 .skill-type {
    margin: 2rem 0 0 0;
    width: 100%;
-   /* background-color: #062846; */
    color: #fefefe;
    border-radius: 5px;
 }
@@ -95,8 +63,8 @@
    height: 80%;
    border-radius: 10px;
    transition: 0.5s ease-in-out;
-   box-shadow: 0 0 5px 5px transparent;
-   border: 2px solid transparent;
+   box-shadow: 0 0 10px 2px transparent;
+   border: 2px solid white;
 }
 
 .item:hover {
