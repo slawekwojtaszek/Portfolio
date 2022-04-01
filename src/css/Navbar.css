@@ -38,3 +38,56 @@ nav {
    font-size: 2rem;
    color: rgb(38, 38, 38);
 }
+
+/* Night Mode Toggle */
+
+.label {
+   padding: 2px;
+   position: relative;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   flex-direction: row;
+   width: 70px;
+   height: 40px;
+   border-radius: 50px;
+   background-color: black;
+   border: 1px solid white;
+}
+
+.sun {
+   width: 40%;
+   height: 70%;
+   border-radius: 50%;
+   background-image: url("../img/sun.png");
+   background-position: center;
+   background-size: contain;
+   background-repeat: no-repeat;
+}
+
+.moon {
+   width: 40%;
+   height: 70%;
+   border-radius: 50%;
+   background-image: url("../img/moon.png");
+   background-position: center;
+   background-size: contain;
+   background-repeat: no-repeat;
+}
+
+.toggle {
+   position: absolute;
+   left: 10%;
+   width: 40%;
+   height: 70%;
+   border-radius: 50%;
+   background-color: rgb(255, 255, 255);
+   transition: transform 0.2s linear;
+}
+.checkbox {
+   opacity: 0;
+   position: absolute;
+}
+.checkbox:checked + .label .toggle {
+   transform: translateX(27px);
+}

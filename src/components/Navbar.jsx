@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../css/Navbar.css";
 import MobileMenu from "./MobileMenu";
+import sun from "../img/sun.png";
+import moon from "../img/moon.png";
 
 function Navbar({ isClose, onClick, newButton }) {
    let darkMode = localStorage.getItem("darkMode");
@@ -19,7 +21,8 @@ function Navbar({ isClose, onClick, newButton }) {
    if (darkMode === "enabled") {
       enableDarkMode();
    }
-   const darkModeToggle = () => {
+   const darkModeToggle = (e) => {
+      console.log(e.target);
       let darkMode = localStorage.getItem("darkMode");
       if (darkMode !== "enabled") {
          enableDarkMode();
@@ -30,13 +33,21 @@ function Navbar({ isClose, onClick, newButton }) {
    return (
       <>
          <nav>
-            <div className='night' onClick={darkModeToggle}></div>
             <div className='top-container'>
                <Link to='/' onClick={!isClose ? onClick : null}>
                   <div className='logo'>
                      <h1>voytashek.</h1>
                   </div>
                </Link>
+               <input type='checkbox' id='checkbox' className='checkbox' />
+               <label
+                  htmlFor='checkbox'
+                  className='label'
+                  onClick={darkModeToggle}>
+                  <div className='moon'></div>
+                  <div className='sun'></div>
+                  <div className='toggle'></div>
+               </label>
                <div className='icon-container'>
                   <div
                      className={isClose ? "menu-btn " : "menu-btn open"}
