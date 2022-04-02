@@ -1,8 +1,9 @@
 import "./App.css";
+
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Link } from "react-router-dom";
 import QuickAccessBox from "./components/QuickAccessBox";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import MobileMenu from "./components/MobileMenu";

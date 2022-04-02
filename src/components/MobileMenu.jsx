@@ -10,18 +10,12 @@ import {
    SiCss3,
    SiTypescript,
    SiFigma,
+   SiAdobephotoshop,
+   SiAdobeillustrator,
+   SiAdobexd,
 } from "react-icons/si";
 
 function MobileMenu({ isClose, onClick }) {
-   const [isNight, setisNight] = useState(false);
-
-   const nightMode = () => {
-      if (!isNight) {
-         setisNight((isNight) => isNight);
-         document.body.classList.toggle("night-mode");
-      }
-   };
-
    return (
       <div className={isClose ? "bottom-container onOff " : "bottom-container"}>
          <ul className='list'>
@@ -57,21 +51,35 @@ function MobileMenu({ isClose, onClick }) {
             <div className='technologies-container'>
                <div className='react'>
                   <SiReact />
+                  <p>React JS</p>
                </div>
                <div className='js'>
                   <SiJavascript />
+                  <p>JavaScript</p>
                </div>
                <div className='html'>
                   <SiHtml5 />
+                  <p>HTML5</p>
                </div>
                <div className='css'>
                   <SiCss3 />
+                  <p>CSS 3</p>
                </div>
-               <div className='type-script'>
-                  <SiTypescript />
+               <div className='illustrator'>
+                  <SiAdobeillustrator />
+                  <p>Illustrator</p>
+               </div>
+               <div className='photoshop'>
+                  <SiAdobephotoshop />
+                  <p>Photoshop</p>
+               </div>
+               <div className='xd'>
+                  <SiAdobexd />
+                  <p>Xd</p>
                </div>
                <div className='figma'>
                   <SiFigma />
+                  <p>Figma</p>
                </div>
             </div>
          </div>
