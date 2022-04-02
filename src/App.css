@@ -8,7 +8,8 @@
 .light-mode .bottom-container,
 .light-mode .single-item-des-text,
 .light-mode .header-container.container,
-.light-mode .about-container {
+.light-mode .about-container,
+.light-mode .not-found {
    background-color: white;
 }
 
@@ -18,7 +19,8 @@
 .light-mode .bottom-container,
 .light-mode .header-container h1,
 .light-mode .question-cont,
-.light-mode .about-container {
+.light-mode .about-container,
+.light-mode .not-found {
    color: black;
 }
 
@@ -59,11 +61,11 @@
       max-width: 1000px;
    }
 
-   .single-item {
+   .item {
       margin: 0 auto;
       display: flex;
       flex-direction: row;
-      max-width: 500px;
+      width: 80vw;
    }
 }
 
@@ -159,4 +161,23 @@
    background-color: yellow;
    border-radius: 5px;
    z-index: 10;
+}
+
+.not-found {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   flex-direction: column;
+   height: 90vh;
+   color: white;
+   background-color: black;
+}
+
+.not-found h1,
+.not-found h2 {
+   text-align: center;
+   padding: 1rem;
+   margin: 1rem;
+   font-size: 2rem;
+   font-weight: 700;
 }

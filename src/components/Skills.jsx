@@ -40,17 +40,17 @@ function Skills({ onClick, isClose }) {
                <Button
                   onClick={showHard}
                   content={"Hard Skills"}
-                  className={"btn-normal hard"}
+                  className={"btn-normal hard-btn"}
                />
                <Button
                   onClick={showSoft}
                   content={"Soft Skills"}
-                  className={"btn-normal soft"}
+                  className={"btn-normal soft-btn"}
                />
                <Button
                   onClick={showAll}
                   content={"Show All"}
-                  className={"btn-normal all"}
+                  className={"btn-normal all-btn"}
                />
             </div>
             {isHard ? <HardSkills /> : null}

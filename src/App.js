@@ -10,6 +10,7 @@ import Portfolio from "./components/Portfolio";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Footer from "./components/Footer";
+import NotFound from "./components/NotFound";
 
 function App(props) {
    const [isClose, setisClose] = useState(true);
@@ -29,6 +30,7 @@ function App(props) {
             <Router>
                <Navbar onClick={newButton} isClose={isClose} />
                <Routes>
+                  <Route path='*' element={<NotFound />} />
                   <Route path='/' element={<Header />} />
                   <Route
                      path='/portfolio'
@@ -45,6 +47,7 @@ function App(props) {
                      path='/skills'
                      element={<Skills onClick={newButton} isClose={isClose} />}
                   />
+                  <Route element={<NotFound />} />
                </Routes>
             </Router>
          </div>

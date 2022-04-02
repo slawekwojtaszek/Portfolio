@@ -5,6 +5,7 @@ function SingleSkill({
    icon,
    name,
    className,
+   skillType,
    list1,
    list2,
    list3,
@@ -81,7 +82,7 @@ function SingleSkill({
                   </div>
                ) : null}
                <div className='skill-type'>
-                  <p>Soft Skill</p>
+                  <p>{skillType}</p>
                </div>
             </div>
          </div>

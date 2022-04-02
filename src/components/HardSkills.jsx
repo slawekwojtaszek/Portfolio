@@ -18,6 +18,7 @@ function HardSkills({ isHard }) {
                className={"react"}
                icon={<SiReact />}
                name={"React"}
+               skillType={"Hard Skill"}
                list1={`Fundamentals of JSX, Virtual DOM, Components, State, Props, Events.`}
                list2={`Importance of seperation the concerns`}
                list3={`  Functional and Class components, understanding
@@ -33,6 +34,7 @@ function HardSkills({ isHard }) {
                className={"javascript"}
                icon={<SiJavascript />}
                name={"Javascript"}
+               skillType={"Hard Skill"}
                list1={`Data structure, data types, variablaes`}
                list2={`Multiple methods inlcuding the most essential ones like map(), filter() or `}
                list3={`flsflsmfl`}
@@ -42,6 +44,7 @@ function HardSkills({ isHard }) {
                className={"css"}
                icon={<SiCss3 />}
                name={"CSS 3"}
+               skillType={"Hard Skill"}
                list1={`Data structure, data types, variablaes`}
                list2={`Multiple methods inlcuding the most essential ones like map(), filter() or `}
                list3={`flmsflsmlf`}
@@ -51,6 +54,7 @@ function HardSkills({ isHard }) {
                className={"html"}
                icon={<SiHtml5 />}
                name={"HTML 5"}
+               skillType={"Hard Skill"}
                list1={`Data structure, data types, variablaes`}
                list2={`Multiple methods inlcuding the most essential ones like map(), filter() or `}
                list3={`fsfsmlfml`}

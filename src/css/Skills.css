@@ -7,13 +7,7 @@
    background-color: black;
 }
 
-.hard-skills {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-}
-
+.hard-skills,
 .soft-skills {
    display: flex;
    justify-content: center;
@@ -35,17 +29,20 @@
 }
 
 .skill-type {
+   display: flex;
+   justify-content: center;
+   align-items: center;
    margin: 2rem 0 0 0;
-   width: 100%;
-   color: #fefefe;
+   width: 35%;
+   color: white;
+   border: 1px solid white;
    border-radius: 5px;
 }
 
 .bottom-item .skill-type p {
    text-align: center;
-   font-size: 1rem;
+   font-size: 0.8rem;
    font-weight: 900;
-   text-decoration: wavy;
 }
 .top-item,
 .item,
@@ -55,11 +52,15 @@
    align-items: center;
 }
 
+/* .top-item {
+   flex-direction: column;
+} */
+
 .item {
    flex-direction: column;
    margin: 1rem auto 1rem auto;
-   padding: 0.2rem;
-   max-width: 80%;
+   padding: 1rem;
+   width: 80vw;
    height: 80%;
    border-radius: 10px;
    transition: 0.5s ease-in-out;
@@ -87,6 +88,7 @@
 }
 
 .bottom-item {
+   margin: 0 auto;
    width: 100%;
    justify-content: space-around;
    flex-direction: column;
@@ -104,14 +106,6 @@
    margin: 0.3rem;
    transition: 0.4s;
    border-bottom: 1px solid transparent;
-}
-
-.bottom-item h2 {
-   margin: 1.5rem;
-   font-size: 1.4rem;
-   font-weight: 900;
-   width: 100%;
-   text-align: center;
 }
 
 .list-element {
@@ -176,14 +170,15 @@
 }
 
 .item.soft:hover {
-   box-shadow: 0 0 10px 3px rgb(52, 221, 37);
+   box-shadow: 0 0 10px 3px #218be8;
 }
+
 .item.soft .top-item {
-   background-color: rgb(6, 6, 6);
+   background-color: #218be8;
 }
 
 .item.soft .bottom-item {
-   background-color: #0b3e6c;
+   background-color: #218be8;
 }
 
 /* later */
