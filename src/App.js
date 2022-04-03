@@ -6,6 +6,7 @@ import QuickAccessBox from "./components/QuickAccessBox";
 import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
+import Contact from "./components/Contact";
 import MobileMenu from "./components/MobileMenu";
 import Portfolio from "./components/Portfolio";
 import About from "./components/About";
@@ -16,6 +17,7 @@ import NotFound from "./components/NotFound";
 function App(props) {
    const [isClose, setisClose] = useState(true);
    document.body.style.overflowX = "hidden";
+
    const newButton = () => {
       setisClose((isClose) => !isClose);
       if (!isClose) {
@@ -47,6 +49,10 @@ function App(props) {
                   <Route
                      path='/skills'
                      element={<Skills onClick={newButton} isClose={isClose} />}
+                  />
+                  <Route
+                     path='/contact'
+                     element={<Contact onClick={newButton} isClose={isClose} />}
                   />
                   <Route element={<NotFound />} />
                </Routes>

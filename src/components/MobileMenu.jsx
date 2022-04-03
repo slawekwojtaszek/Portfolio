@@ -40,7 +40,7 @@ function MobileMenu({ isClose, onClick }) {
                </Link>
             </li>
             <li>
-               <Link to='/' onClick={onClick}>
+               <Link to='/contact' onClick={onClick}>
                   Contact
                </Link>
             </li>
