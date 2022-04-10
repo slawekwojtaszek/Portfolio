@@ -73,7 +73,7 @@ function Navbar({ isClose, onClick, newButton }) {
       <>
          <nav>
             <div className='top-bar'>
-               <div className='message'>Hi there, lorem lotem lotrme</div>
+               <div className='message'>I hope you are having a great day!</div>
                <div className='x' onClick={messageToggle}>
                   X
                </div>

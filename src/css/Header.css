@@ -7,7 +7,7 @@
 
 .graphic {
    position: absolute;
-   top: 40%;
+   top: 30%;
    height: 50%;
    width: 100%;
    background-image: url("../img/file.svg");
@@ -19,8 +19,9 @@
 
 .header-container h1 {
    position: absolute;
+   max-width: 80%;
    padding: 2rem;
-   margin-bottom: 2rem;
+   margin: 0 auto;
    top: 7%;
    font-family: "Kanit", sans-serif;
    color: rgb(252, 252, 252);
@@ -31,7 +32,7 @@
 
 .header-container h2 {
    position: absolute;
-   margin: 1rem;
+   margin-top: 0.5rem;
    padding: 2rem;
    top: 20%;
    font-family: "Kanit", sans-serif;

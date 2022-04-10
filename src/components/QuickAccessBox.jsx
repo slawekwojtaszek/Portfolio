@@ -6,6 +6,8 @@ import { FaListUl } from "react-icons/fa";
 import { GoPerson } from "react-icons/go";
 import { IoDocument } from "react-icons/io5";
 
+import Pdf from "../../src/test.pdf";
+
 function QuickAccessBox() {
    return (
       <>
@@ -27,12 +29,14 @@ function QuickAccessBox() {
                   <div className='des'>Skills</div>
                </div>
             </Link>
-            <div className='me'>
-               <div className='icon'>
-                  <IoDocument />
+            <a href={Pdf}>
+               <div className='me'>
+                  <div className='icon'>
+                     <IoDocument />
+                  </div>
+                  <div className='des'>Download CV</div>
                </div>
-               <div className='des'>Download CV</div>
-            </div>
+            </a>
          </div>
       </>
    );

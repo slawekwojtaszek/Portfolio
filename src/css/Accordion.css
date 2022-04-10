@@ -17,21 +17,25 @@
    flex-direction: row;
    padding: 1rem;
    transition: 0.4s;
+   background-color: black;
+   color: white;
 }
 .question-cont {
    height: 8vh;
    font-size: 1.1rem;
    font-weight: 700;
    border-radius: 5px;
-   color: black;
-   background-color: #ffffff;
+   color: white;
+   background-color: black;
+   border: 1px solid white;
 }
 
 .answer-cont {
-   margin-top: -0.5rem;
-   background-color: #ffffff;
-   color: black;
-   border-top: 2px solid black;
+   margin: 0.5rem;
+   background-color: black;
+   color: white;
+   border: 1px solid white;
+   border-radius: 5px;
 }
 
 .answer-cont p {

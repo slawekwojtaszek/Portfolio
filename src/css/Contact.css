@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+.form-container {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-direction: column;
+}
+
+.form-container .info {
+   font-family: "Lato", sans-serif;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   height: 100%;
+   width: 90%;
+   flex-direction: column;
+   color: white;
+}
+
+.form-container .info img {
+   margin: 2rem;
+   width: 50%;
+}
+
+.form-container .info h1 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #0169ed;
+   color: white;
+   width: 100vw;
+   height: 7vh;
+   font-size: 1.5rem;
+   font-weight: 700;
+}
+.form-container .info h2 {
+   font-size: 1rem;
+}
+
+.form-container .info h3 {
+   margin: 1rem;
+}
+.form-container .info h3 a {
+   font-size: 1.7rem;
+   color: white;
+   font-weight: 900;
+}
+
+.form-container form {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 100%;
+   /* border: 3px solid red; */
+}
+
+.form-container .container h1 {
+   color: white;
+   font-size: 1.5rem;
+   padding: 1rem;
+   font-weight: 500;
+}
+
+.form-container .container {
+   font-family: "Lato", sans-serif;
+   padding: 1rem 2rem;
+   margin: 3rem 0 8rem 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   border: 1px solid white;
+   width: 90%;
+   border-radius: 5px;
+   box-shadow: 1px 0px 4px 3px rgb(216, 216, 216);
+}
+
+.top,
+.middle,
+.bottom {
+   margin: 1rem;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   flex-direction: column;
+   width: 100%;
+   color: white;
+}
+
+.middle {
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.email,
+.phone {
+   width: 100%;
+}
+.email {
+   margin-right: 1.5rem;
+}
+
+.container label {
+   width: 100%;
+}
+
+.container input,
+.container textarea {
+   font-family: "Lato", sans-serif;
+   padding: 1rem;
+   width: 100%;
+   height: 60px;
+   border: 1px solid white;
+   background-color: black;
+   color: white;
+   border-radius: 4px;
+   font-size: 1rem;
+}
+.container input::placeholder,
+.container textarea::placeholder {
+   color: rgb(214, 214, 214);
+   font-size: 0.9rem;
+}
+
+/* .container input:focus {
+   color: white;
+} */
+.container textarea {
+   height: 120px;
+}
+.container p {
+   font-weight: 600;
+   margin: 0.5rem 0;
+}
+
+button {
+   width: 50%;
+   border: none;
+   padding: 1rem;
+   font-size: 1.1rem;
+   background-color: #0169ed;
+   font-weight: 900;
+   color: white;
+   border-radius: 5px;
+}
+
+button:hover {
+   background-color: #0256c3;
+}

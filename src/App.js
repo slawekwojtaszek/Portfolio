@@ -35,6 +35,7 @@ function App(props) {
                <Routes>
                   <Route path='*' element={<NotFound />} />
                   <Route path='/' element={<Header />} />
+
                   <Route
                      path='/portfolio'
                      element={

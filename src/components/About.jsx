@@ -23,7 +23,7 @@ function About({ onClick, isClose }) {
       {
          question: "What is my main passion?",
          answer:
-            "Anything about sound. I explore difrent music teritories using my toys. I have quite a lot of hardware that helps me to explore many intresing sound worlds",
+            "Sound. I explore difrent music teritories using my hardware instruments that consists of synthesizers, samplers, drum machines and many more!",
          id: 2,
       },
       {
@@ -40,7 +40,7 @@ function About({ onClick, isClose }) {
    ];
    return (
       <>
-         <div className='about-container '>
+         <div className='about-container slide-in-right '>
             <div className='top-section'>
                <div className='title'>
                   <h1>Hello, I am Slawek</h1>

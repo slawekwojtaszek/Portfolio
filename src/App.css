@@ -9,7 +9,11 @@
 .light-mode .single-item-des-text,
 .light-mode .header-container.container,
 .light-mode .about-container,
-.light-mode .not-found {
+.light-mode .not-found,
+.light-mode .question-cont,
+.light-mode .answer-cont,
+.light-mode .container input,
+.light-mode .container textarea {
    background-color: white;
 }
 
@@ -21,21 +25,27 @@
 .light-mode .question-cont,
 .light-mode .about-container,
 .light-mode .not-found,
-.light-mode .technologies-mobile h1 {
+.light-mode .technologies-mobile h1,
+.light-mode .container input,
+.light-mode .container textarea,
+.light-mode .top,
+.light-mode .middle,
+.light-mode .bottom,
+.light-mode .form-container .info,
+.light-mode .form-container .info h3 a {
    color: black;
 }
 
 .light-mode .menu-btn__burger::before,
 .light-mode .menu-btn__burger::after,
 .light-mode .menu-btn__burger,
-.light-mode,
-.light-mode .question-cont,
-.light-mode .answer-cont {
+.light-mode {
    background-color: black;
 }
 .light-mode .question-cont,
-.light-mode .answer-cont {
-   color: white;
+.light-mode .answer-cont,
+.light-mode .form-container .container h1 {
+   color: black;
 }
 
 .light-mode .single-item {
@@ -47,11 +57,22 @@
 }
 
 .light-mode .answer-cont {
-   border-top: 2px solid rgb(255, 255, 255);
+   border: 1px solid black;
+}
+
+.light-mode .question-cont {
+   border: 1px solid black;
 }
 
 .light-mode .bottom-container a {
    border-bottom: 5px solid black;
+}
+
+.light-mode .container input,
+.light-mode .container textarea,
+.light-mode .container,
+.light-mode {
+   border: 1px solid rgb(165, 165, 165);
 }
 
 /* Media Queires */
@@ -187,6 +208,15 @@
    font-weight: 700;
 }
 
+img {
+   width: 100%;
+   height: 100%;
+}
+
+.img-container {
+   width: 40%;
+}
+
 .top-bar {
    width: 100%;
    display: flex;
@@ -199,14 +229,15 @@
 .message,
 .x {
    padding: 2rem 1rem;
-   font-size: 1.2rem;
+   font-size: 1rem;
    font-weight: 700;
    color: white;
 }
 
 .message {
-   font-weight: 500;
+   font-weight: 700;
    text-align: center;
+   font-size: 0.9rem;
 }
 
 .top-bar.hide {
