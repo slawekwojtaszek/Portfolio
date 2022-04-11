@@ -32,7 +32,8 @@
 .light-mode .middle,
 .light-mode .bottom,
 .light-mode .form-container .info,
-.light-mode .form-container .info h3 a {
+.light-mode .form-container .info h3 a,
+.light-mode .list-main a {
    color: black;
 }
 
@@ -54,6 +55,13 @@
 
 .light-mode .item {
    box-shadow: 0 0 10px 5px rgb(220, 220, 220);
+}
+
+.light-mode .list-main a {
+   border-bottom: 1px solid transparent;
+}
+.light-mode .list-main a:hover {
+   border-bottom: 1px solid black;
 }
 
 .light-mode .answer-cont {
@@ -84,7 +92,7 @@
 
    .top-container {
       margin: 0 auto;
-      max-width: 1000px;
+      max-width: 1100px;
    }
 
    .item {

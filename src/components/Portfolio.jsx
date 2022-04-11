@@ -7,7 +7,7 @@ import { SiGithub } from "react-icons/si";
 import { ImLink } from "react-icons/im";
 // import dailyplannerPhoto from "../img/dailyplanner.png";
 // import iphoneStopwatchPhoto from "../img/iphonestopwatch.png";
-// import broccoliPhoto from "../img/broccoli.png";
+import broccoliPhoto from "../img/broccoli.png";
 // import flashCardsPhoto from "../img/flashcards.png";
 import QuickAccessBox from "./QuickAccessBox";
 
@@ -70,7 +70,7 @@ function Portfolio({ isClose, onClick }) {
                github={"https://github.com/slawekwojtaszek"}
                icon1={<SiGithub />}
                icon2={<ImLink />}
-               bgphoto={File}
+               bgphoto={broccoliPhoto}
                summary={"Remember to take cold shower today!"}
                descripction={`The app is a simply daily planner where you can add tasks, mark them as completed, delete them and search for them. Also, you can change the main theme coolour using sliders. All wrritten in Vanilla Javascript`}
             />

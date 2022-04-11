@@ -1,4 +1,4 @@
-.box {
+.box-container {
    display: flex;
    justify-content: space-around;
    align-items: center;
@@ -7,6 +7,13 @@
    height: 10vh;
    width: 100vw;
    background-color: #0069ed;
+}
+
+.box {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   width: 100%;
 }
 
 .portfolio,
@@ -29,4 +36,12 @@
 div.des {
    font-size: 0.8rem;
    color: white;
+}
+
+@media screen and (min-width: 501px) {
+   .box {
+      margin: 0 auto;
+      width: 50%;
+      justify-content: space-around;
+   }
 }

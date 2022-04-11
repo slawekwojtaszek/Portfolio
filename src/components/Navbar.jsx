@@ -94,6 +94,24 @@ function Navbar({ isClose, onClick, newButton }) {
                   <div className='sun'></div>
                   <div className='toggle'></div>
                </label>
+
+               <ul className='list-main'>
+                  <li>
+                     <Link to='/'>Home</Link>
+                  </li>
+                  <li>
+                     <Link to='/portfolio'>Portfolio</Link>
+                  </li>
+                  <li>
+                     <Link to='/skills'>Skills</Link>
+                  </li>
+                  <li>
+                     <Link to='/about'>About</Link>
+                  </li>
+                  <li>
+                     <Link to='/contact'>Contact</Link>
+                  </li>
+               </ul>
                <div className='icon-container'>
                   <div
                      className={isClose ? "menu-btn " : "menu-btn open"}
