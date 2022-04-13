@@ -9,6 +9,7 @@ nav {
    position: sticky;
    top: 0;
    z-index: 11;
+   /* animation: rect 1s ease; */
 }
 
 .top-container {

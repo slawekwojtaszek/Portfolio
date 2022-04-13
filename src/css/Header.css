@@ -7,15 +7,24 @@
 }
 
 .graphic {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
    position: absolute;
    top: 30%;
-   height: 50%;
+   height: 40%;
    width: 100%;
-   background-image: url("../img/file.svg");
+   /* background-image: url("../img/file.svg");
    background-repeat: no-repeat;
    background-position: center;
-   background-size: 90% 80%;
+   background-size: 90% 80%; */
    /* border: 2px solid red; */
+}
+
+.graphic .svg {
+   height: 100%;
+   width: 100%;
 }
 
 .header-container h1 {

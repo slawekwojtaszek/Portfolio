@@ -30,7 +30,7 @@ function QuickAccessBox() {
                      <div className='des'>Skills</div>
                   </div>
                </Link>
-               <a href={Pdf}>
+               <a href={Pdf} target='blank'>
                   <div className='me'>
                      <div className='icon'>
                         <IoDocument />

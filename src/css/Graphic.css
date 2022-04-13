@@ -1,0 +1,177 @@
+#rectangle {
+   animation: rectangle1 7s ease-in-out infinite;
+   transform-origin: center;
+   transform-box: fill-box;
+   animation-delay: 1s;
+}
+
+#rectangle2 {
+   animation: rectangle2 6.5s ease-in-out infinite;
+   transform-origin: center;
+   transform-box: fill-box;
+   animation-delay: 1s;
+}
+#rectangle3 {
+   animation: rectangle3 8.5s ease-in-out infinite;
+   transform-origin: center;
+   transform-box: fill-box;
+   animation-delay: 1s;
+}
+#rectangle4 {
+   animation: rectangle4 8s linear infinite;
+   transform-origin: center;
+   transform-box: fill-box;
+}
+
+#dots,
+#dots2 {
+   animation: dots 6s ease;
+   transform-origin: center;
+   transform-box: fill-box;
+}
+
+#dots2 {
+   animation-delay: 3.3s;
+}
+
+#plus {
+   animation: plus2 1.5s ease;
+   transform-origin: center;
+   transform-box: fill-box;
+}
+
+#plus2 {
+   animation: plus 8.5s linear infinite;
+   transform-origin: center;
+   transform-box: fill-box;
+   animation-delay: 0.8s;
+}
+
+#left {
+   animation: arrow 2s ease-in-out;
+   transform-origin: center;
+   transform-box: fill-box;
+   animation-delay: 1.8s;
+}
+
+#right {
+   animation: arrow 2s ease-in-out;
+   transform-origin: center;
+   transform-box: fill-box;
+   animation-delay: 6.3s;
+}
+
+#middle {
+   animation: middle 8.5s ease-in-out infinite;
+   transform-origin: center;
+   transform-box: fill-box;
+   animation-delay: 1s;
+}
+
+@keyframes rectangle1 {
+   0% {
+      transform: scale(1);
+   }
+   50% {
+      transform: scale(0.9);
+   }
+   100% {
+      transform: scale(1);
+   }
+}
+@keyframes rectangle2 {
+   0% {
+      transform: scale(1);
+   }
+   50% {
+      transform: scale(1.1);
+   }
+   100% {
+      transform: scale(1);
+   }
+}
+@keyframes rectangle3 {
+   0% {
+      transform: translateX(0);
+   }
+   25% {
+      transform: translateX(-20px);
+   }
+   50% {
+      transform: translateX(0px);
+   }
+
+   75% {
+      transform: translateX(20px);
+   }
+   100% {
+      transform: translateX(0);
+   }
+}
+@keyframes rectangle4 {
+}
+
+@keyframes middle {
+   0% {
+      transform: translateX(0);
+   }
+   25% {
+      transform: translateX(-70px);
+   }
+   50% {
+      transform: translateX(0);
+   }
+
+   75% {
+      transform: translateX(70px);
+   }
+   100% {
+      transform: translateX(0);
+   }
+}
+
+@keyframes plus {
+   0% {
+      transform: rotateZ(0deg);
+   }
+   100% {
+      transform: rotateZ(360deg);
+   }
+}
+@keyframes plus2 {
+   0% {
+      transform: scale(1);
+   }
+   50% {
+      transform: scale(1.5);
+   }
+   100% {
+      transform: scale(1);
+   }
+}
+
+@keyframes arrow {
+   0% {
+      transform: scale(1);
+   }
+   50% {
+      transform: scale(2);
+   }
+   100% {
+      transform: scale(1);
+   }
+}
+
+@keyframes dots {
+   0% {
+      opacity: 0.4;
+   }
+
+   50% {
+      opacity: 0;
+   }
+
+   100% {
+      opacity: 0.4;
+   }
+}

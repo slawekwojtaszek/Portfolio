@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "../css/Header.css";
 import { Link } from "react-router-dom";
 import QuickAccessBox from "./QuickAccessBox";
+import Graphic from "./Graphic";
 
 function Header() {
    return (
@@ -13,7 +14,10 @@ function Header() {
                   I create beautiful online solutuions with strong UX/UI focus
                </h1>
                <h2>Entry-Level Front End Developer / UX Designer</h2>
-               <div className='graphic'></div>
+
+               <div className='graphic'>
+                  <Graphic />
+               </div>
             </div>
 
             {/* <div className='container'>
