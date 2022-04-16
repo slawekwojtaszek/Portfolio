@@ -10,6 +10,8 @@ import {
    SiWechat,
 } from "react-icons/si";
 
+import { BsFillFileEarmarkCodeFill } from "react-icons/bs";
+
 function HardSkills({ isHard }) {
    return (
       <>
@@ -20,7 +22,6 @@ function HardSkills({ isHard }) {
                name={"React"}
                skillType={"Hard Skill"}
                list1={`Fundamentals of JSX, Virtual DOM, Components, State, Props, Events.`}
-               list2={`Importance of seperation the concerns`}
                list3={`  Functional and Class components, understanding
                     this problem`}
                list4={`Use of React Hooks`}
@@ -28,7 +29,6 @@ function HardSkills({ isHard }) {
                list6={`State management wiht Props and Context`}
                list7={`Use of Routes and React Router DOM`}
                list8={`Understanding of Redux`}
-               list9={`Basic knowledge od GraphQL`}
             />
             <SingleSkill
                className={"javascript"}
@@ -39,6 +39,8 @@ function HardSkills({ isHard }) {
                list2={`Multiple methods inlcuding the most essential ones like map(), filter() or `}
                list3={`flsflsmfl`}
                list4={`Different type of functions including Arrow Function and Closures`}
+               list5={`Different type of functions including Arrow Function and Closures`}
+               list6={`Different type of functions including Arrow Function and Closures`}
             />
             <SingleSkill
                className={"css"}
@@ -54,6 +56,16 @@ function HardSkills({ isHard }) {
                className={"html"}
                icon={<SiHtml5 />}
                name={"HTML 5"}
+               skillType={"Hard Skill"}
+               list1={`Data structure, data types, variablaes`}
+               list2={`Multiple methods inlcuding the most essential ones like map(), filter() or `}
+               list3={`fsfsmlfml`}
+               list4={`Different type of functions including Arrow Function and Closures`}
+            />
+            <SingleSkill
+               className={"concepts"}
+               icon={<BsFillFileEarmarkCodeFill />}
+               name={"Concepts"}
                skillType={"Hard Skill"}
                list1={`Data structure, data types, variablaes`}
                list2={`Multiple methods inlcuding the most essential ones like map(), filter() or `}

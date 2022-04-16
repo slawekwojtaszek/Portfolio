@@ -3,7 +3,7 @@
    justify-content: center;
    align-items: center;
    flex-direction: column;
-   background-color: black;
+
    overflow-x: hidden;
 }
 
@@ -58,6 +58,7 @@
 
 .item {
    flex-direction: column;
+   justify-content: space-between;
    margin: 1rem auto 1rem auto;
    padding: 0.5rem;
    width: 85%;
@@ -65,18 +66,17 @@
    border-radius: 10px;
    transition: 0.5s ease-in-out;
    box-shadow: 0 0 10px 2px transparent;
-   border: 2px solid white;
+   border: 3px solid white;
 }
 
 .item:hover {
    transform: scale(1.03);
 }
 .top-item {
-   margin: 0 1rem 1rem 1rem;
-   padding: 2rem 1rem;
+   padding: 1rem;
    color: white;
    font-weight: 700;
-   height: 120%;
+   height: 20%;
    width: 100%;
    justify-content: space-around;
    border-radius: 5px;
@@ -90,6 +90,7 @@
 .bottom-item {
    margin: 0 auto;
    width: 100%;
+   height: 100%;
    justify-content: space-around;
    flex-direction: column;
    padding: 1rem;
@@ -122,12 +123,12 @@
    border-radius: 50%;
 }
 
-.item.react:hover {
-   box-shadow: 0 0 10px 3px rgb(94, 211, 243);
+.item.react {
+   background-color: rgb(94, 211, 243);
 }
 
-.item.react .top-item {
-   background-color: rgb(94, 211, 243);
+.item.react:hover {
+   box-shadow: 0 0 10px 3px rgb(94, 211, 243);
 }
 
 .item.react .bottom-item {
@@ -138,47 +139,38 @@
    box-shadow: 0 0 10px 3px rgb(234, 212, 29);
 }
 
-.item.javascript .top-item {
+.item.javascript {
    background-color: rgb(240, 218, 20);
-}
-
-.item.javascript .bottom-item {
-   background-color: rgba(215, 195, 21, 0.8);
 }
 
 .item.html:hover {
    box-shadow: 0 0 10px 3px rgb(229, 96, 38);
 }
 
-.item.html .top-item {
+.item.html {
    background-color: rgb(229, 96, 38);
-}
-
-.item.html .bottom-item {
-   background-color: rgba(229, 96, 38, 0.8);
 }
 
 .item.css:hover {
    box-shadow: 0 0 10px 3px rgb(37, 74, 221);
 }
-.item.css .top-item {
+.item.css {
    background-color: rgb(37, 74, 221);
-}
-
-.item.css .bottom-item {
-   background-color: rgba(37, 74, 221, 0.8);
 }
 
 .item.soft:hover {
    box-shadow: 0 0 10px 3px #218be8;
 }
 
-.item.soft .top-item {
+.item.soft {
    background-color: #218be8;
 }
 
-.item.soft .bottom-item {
-   background-color: #218be8;
+.item.concepts {
+   background-color: #5d21e8;
+}
+.item.concepts:hover {
+   box-shadow: 0 0 10px 3px #5d21e8;
 }
 
 /* later */
@@ -193,4 +185,34 @@
 span.mark {
    font-style: italic;
    font-weight: 500;
+}
+
+@media screen and (min-width: 701px) {
+   .item {
+      width: 40vw;
+      height: 70vh;
+      margin: 1rem;
+   }
+   .hard-skills,
+   .soft-skills {
+      flex-wrap: wrap;
+      flex-direction: row;
+   }
+   .buttons {
+      max-width: 700px;
+   }
+   .skills-container {
+      padding-bottom: 8rem;
+   }
+}
+@media screen and (min-width: 1001px) {
+   .item {
+      width: 28vw;
+      margin: 1rem;
+   }
+   .hard-skills,
+   .soft-skills {
+      flex-wrap: wrap;
+      flex-direction: row;
+   }
 }

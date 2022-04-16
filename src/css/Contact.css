@@ -13,7 +13,7 @@
    justify-content: space-around;
    align-items: center;
    height: 100%;
-   width: 90%;
+   width: 95%;
    flex-direction: column;
    color: white;
 }
@@ -65,7 +65,7 @@
 
 .form-container .container {
    font-family: "Lato", sans-serif;
-   padding: 1rem 2rem;
+   padding: 0.5rem 1rem;
    margin: 3rem 0 8rem 0;
    display: flex;
    justify-content: center;
@@ -148,4 +148,24 @@ button {
 
 button:hover {
    background-color: #0256c3;
+}
+
+@media screen and (min-width: 801px) {
+   .form-container .container {
+      width: 60%;
+   }
+   .form-container .info img {
+      margin: 2rem;
+      width: 30%;
+   }
+}
+
+@media screen and (min-width: 1201px) {
+   .form-container .info img {
+      margin: 2rem;
+      width: 20%;
+   }
+   .form-container {
+      padding-bottom: 5rem;
+   }
 }

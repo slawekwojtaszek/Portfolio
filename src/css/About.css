@@ -47,3 +47,14 @@
 .about-container img {
    border-radius: 10px;
 }
+
+@media screen and (min-width: 701px) {
+   .photo {
+      width: 55%;
+   }
+}
+@media screen and (min-width: 1101px) {
+   .photo {
+      width: 35%;
+   }
+}

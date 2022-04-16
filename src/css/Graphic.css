@@ -12,7 +12,7 @@
    animation-delay: 1s;
 }
 #rectangle3 {
-   animation: rectangle3 8.5s ease-in-out infinite;
+   animation: rectangle3 4.5s ease-in-out;
    transform-origin: center;
    transform-box: fill-box;
    animation-delay: 1s;
@@ -36,6 +36,7 @@
 
 #plus {
    animation: plus2 1.5s ease;
+   animation-delay: 0.2s;
    transform-origin: center;
    transform-box: fill-box;
 }
@@ -92,20 +93,11 @@
 }
 @keyframes rectangle3 {
    0% {
-      transform: translateX(0);
-   }
-   25% {
-      transform: translateX(-20px);
-   }
-   50% {
-      transform: translateX(0px);
+      transform: rotate(0);
    }
 
-   75% {
-      transform: translateX(20px);
-   }
    100% {
-      transform: translateX(0);
+      transform: rotate(360deg);
    }
 }
 @keyframes rectangle4 {

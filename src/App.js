@@ -32,6 +32,7 @@ function App(props) {
          <div className='wrapper '>
             <Router>
                <Navbar onClick={newButton} isClose={isClose} />
+
                <Routes>
                   <Route path='*' element={<NotFound />} />
                   <Route path='/' element={<Header />} />

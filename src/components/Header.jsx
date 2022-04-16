@@ -10,10 +10,12 @@ function Header() {
       <>
          <header>
             <div className='header-container scale-up-center'>
-               <h1>
-                  I create beautiful online solutuions with strong UX/UI focus
-               </h1>
-               <h2>Entry-Level Front End Developer / UX Designer</h2>
+               <div className='info'>
+                  <h1>
+                     I create rich online experience focusing on UX and UI.
+                  </h1>
+                  <h2>Entry-Level Front End Developer</h2>
+               </div>
 
                <div className='graphic'>
                   <Graphic />
