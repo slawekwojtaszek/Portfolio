@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import "../css/Portfolio.css";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 import PortfolioItem from "./PortfolioItem";
 import { SiGithub } from "react-icons/si";
 import { ImLink } from "react-icons/im";
@@ -23,10 +24,12 @@ import {
    SiAdobeillustrator,
    SiAdobexd,
 } from "react-icons/si";
+import Breadcrumps from "./Breadcrumps";
 
 function Portfolio({ isClose, onClick }) {
    return (
       <>
+         <Breadcrumps link={"/"} name={"Home"} current={"Portfolio"} />
          <div className='portfolio-container '>
             <PortfolioItem
                title='Flashcards'
@@ -39,6 +42,7 @@ function Portfolio({ isClose, onClick }) {
                summary={"Hola, ¿Qué pasa?"}
                descripction={`This is a React app which is going to help learn some new spanish words! You can change word from Spanish to English or English to Spanish, and you can even add your own word. If the wors is too hard and you are not sure, you can always skip it. Ah, and I almost forgot, you can scroll the boards with numbers to see all your good, bad or skipped words!`}
             />
+
             <PortfolioItem
                title='iPhone Timewatch'
                icon3={<SiJavascript />}

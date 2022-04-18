@@ -21,56 +21,65 @@ function HardSkills({ isHard }) {
                icon={<SiReact />}
                name={"React"}
                skillType={"Hard Skill"}
-               list1={`Fundamentals of JSX, Virtual DOM, Components, State, Props, Events.`}
-               list3={`  Functional and Class components, understanding
-                    this problem`}
-               list4={`Use of React Hooks`}
-               list5={`Fetch data from REST API`}
-               list6={`State management wiht Props and Context`}
-               list7={`Use of Routes and React Router DOM`}
-               list8={`Understanding of Redux`}
+               list1={`Understanding JSX`}
+               list2={`Good knowledge of States and Props`}
+               list3={`Virtual DOM and Event Handlers`}
+               list4={`Functional and Class components`}
+               list5={`Using React Hooks`}
+               list6={`State management using Context and Reducer`}
+               list7={`Fetching data using REST API`}
+               list8={`Using Routes and React Router DOM`}
+               list9={`Understanding of Redux`}
             />
             <SingleSkill
                className={"javascript"}
                icon={<SiJavascript />}
                name={"Javascript"}
                skillType={"Hard Skill"}
-               list1={`Data structure, data types, variablaes`}
-               list2={`Multiple methods inlcuding the most essential ones like map(), filter() or `}
-               list3={`flsflsmfl`}
-               list4={`Different type of functions including Arrow Function and Closures`}
-               list5={`Different type of functions including Arrow Function and Closures`}
-               list6={`Different type of functions including Arrow Function and Closures`}
+               list1={`Data types, variablaes, operators, etc`}
+               list2={`DOM Manipulation and event handlers`}
+               list3={`Accessing, changing and looping through Arrays`}
+               list4={`Use of multiple methods, e.g. Map, Filter, Push, etc`}
+               list5={`Understanding IIFE and Callbacks`}
+               list6={`Recognizible Object Oriented Programming`}
+               list7={`Local and Global Scope consequences`}
+               list8={`Familiar Async & Await`}
             />
             <SingleSkill
                className={"css"}
                icon={<SiCss3 />}
                name={"CSS 3"}
                skillType={"Hard Skill"}
-               list1={`Data structure, data types, variablaes`}
-               list2={`Multiple methods inlcuding the most essential ones like map(), filter() or `}
-               list3={`flmsflsmlf`}
-               list4={`Different type of functions including Arrow Function and Closures`}
+               list1={`Understanding the Box Model and its consequence`}
+               list2={`Very good knowlegede of Flexbox Layout and Grid`}
+               list3={`Media Queries and Responsive Web Design`}
+               list4={`Comprehensive knowledge of dozens CSS properties`}
+               list5={`Familiar with dozens properties`}
+               list6-={`Pre-processor SASS and SCSS`}
+               list7={`Aware of conventions like BEM`}
             />
             <SingleSkill
                className={"html"}
                icon={<SiHtml5 />}
                name={"HTML 5"}
                skillType={"Hard Skill"}
-               list1={`Data structure, data types, variablaes`}
-               list2={`Multiple methods inlcuding the most essential ones like map(), filter() or `}
-               list3={`fsfsmlfml`}
-               list4={`Different type of functions including Arrow Function and Closures`}
+               list1={`Understanding the importance of Semantic elements and structure`}
+               list2={`Input types, attributes and forms.`}
+               list3={`Using Local Storage`}
+               list4={`Familiar with dozens atributes`}
+               list5={`DOCTYPE Declaration`}
             />
             <SingleSkill
                className={"concepts"}
                icon={<BsFillFileEarmarkCodeFill />}
                name={"Concepts"}
                skillType={"Hard Skill"}
-               list1={`Data structure, data types, variablaes`}
-               list2={`Multiple methods inlcuding the most essential ones like map(), filter() or `}
-               list3={`fsfsmlfml`}
-               list4={`Different type of functions including Arrow Function and Closures`}
+               list1={`Server-Client Communcation, how Web works`}
+               list2={`Git Control Version`}
+               list3={`Domains and Hosting`}
+               list4={`Basic of Object Oriented Programming`}
+               list5={`Importance of seperation conerns`}
+               list6={`Naming conventions like camelCase or handleClick, etc`}
             />
             <div className='space'></div>
          </div>

@@ -124,6 +124,11 @@
    font-size: 0.9rem;
 }
 
+.container input:focus,
+.container textarea:focus {
+   border: 4px solid var(--secondary);
+}
+
 /* .container input:focus {
    color: white;
 } */
@@ -152,7 +157,7 @@ button:hover {
 
 @media screen and (min-width: 801px) {
    .form-container .container {
-      width: 60%;
+      width: 80%;
    }
    .form-container .info img {
       margin: 2rem;
@@ -167,5 +172,8 @@ button:hover {
    }
    .form-container {
       padding-bottom: 5rem;
+   }
+   .form-container .container {
+      width: 60%;
    }
 }

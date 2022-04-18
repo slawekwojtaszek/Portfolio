@@ -5,6 +5,7 @@ import "../css/Skills.css";
 import HardSkills from "./HardSkills";
 import SoftSkills from "./SoftSkills";
 import Button from "./Button";
+import Breadcrumps from "./Breadcrumps";
 
 function Skills({ onClick, isClose }) {
    const [isHard, setisHard] = useState(true);
@@ -35,23 +36,49 @@ function Skills({ onClick, isClose }) {
 
    return (
       <>
+         <Breadcrumps link={"/"} name={"Home"} current={"Skills"} />
          <div className='skills-container slide-in-right'>
             <div className='buttons'>
-               <Button
-                  onClick={showHard}
-                  content={"Hard Skills"}
-                  className={"btn-normal hard-btn"}
-               />
-               <Button
-                  onClick={showSoft}
-                  content={"Soft Skills"}
-                  className={"btn-normal soft-btn"}
-               />
-               <Button
-                  onClick={showAll}
-                  content={"Show All"}
-                  className={"btn-normal all-btn"}
-               />
+               {isHard && !isSoft ? (
+                  <Button
+                     onClick={showHard}
+                     content={"Hard Skills"}
+                     className={"btn-normal hard-btn active"}
+                  />
+               ) : (
+                  <Button
+                     onClick={showHard}
+                     content={"Hard Skills"}
+                     className={"btn-normal hard-btn"}
+                  />
+               )}
+               {!isHard && isSoft ? (
+                  <Button
+                     onClick={showSoft}
+                     content={"Soft Skills"}
+                     className={"btn-normal soft-btn active"}
+                  />
+               ) : (
+                  <Button
+                     onClick={showSoft}
+                     content={"Soft Skills"}
+                     className={"btn-normal soft-btn"}
+                  />
+               )}
+
+               {isHard && isSoft ? (
+                  <Button
+                     onClick={showAll}
+                     content={"Show All"}
+                     className={"btn-normal all-btn active"}
+                  />
+               ) : (
+                  <Button
+                     onClick={showAll}
+                     content={"Show All"}
+                     className={"btn-normal all-btn"}
+                  />
+               )}
             </div>
             {isHard ? <HardSkills /> : null}
             {isSoft ? <SoftSkills /> : null}

@@ -76,14 +76,14 @@
 
 .live,
 .git {
-   background-color: #0069ed;
+   background-color: var(--primary);
    font-weight: 900;
    margin: 0 auto;
    padding: 0.7rem;
    font-size: 1.1rem;
    border-radius: 4px;
    transition: 0.4s;
-   width: 80%;
+   width: 90%;
 }
 
 .live:hover,
@@ -145,7 +145,7 @@ h2 svg {
 
 @media screen and (min-width: 801px) {
    .single-item {
-      width: 30vw;
+      width: 40vw;
       height: 65vh;
       margin: 1rem;
       justify-content: space-between;
@@ -163,4 +163,24 @@ h2 svg {
       width: 95%;
       font-size: 1rem;
    }
+}
+
+@media screen and (min-width: 1101px) {
+   .single-item {
+      width: 29vw;
+      height: 65vh;
+   }
+}
+
+.bar {
+   background-color: var(--secondary);
+   text-align: center;
+   color: white;
+   padding: 0.5rem;
+   font-weight: 900;
+   font-size: 0.9rem;
+}
+
+.bar a {
+   color: white;
 }

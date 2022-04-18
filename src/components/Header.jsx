@@ -22,10 +22,10 @@ function Header() {
                </div>
             </div>
 
-            {/* <div className='container'>
+            <div className='container'>
                <div className='descripction'>The newest project</div>
                <div className='thumb'></div>
-            </div> */}
+            </div>
 
             <QuickAccessBox />
          </header>

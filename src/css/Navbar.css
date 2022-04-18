@@ -53,7 +53,7 @@ nav {
    height: 30px;
    border-radius: 50px;
    background-color: black;
-   border: 1px solid white;
+   border: 2px solid white;
 }
 
 .sun {
@@ -107,12 +107,13 @@ nav {
    color: white;
    font-size: 1.2rem;
    font-weight: 700;
-   border-bottom: 1px solid transparent;
-   transition: 0.4s;
+   border-bottom: 2px solid transparent;
+   transition: 0.3s;
 }
 
 .list-main a:hover {
-   border-bottom: 1px solid white;
+   transform: scale(1.1);
+   border-bottom: 2px solid var(--secondary);
 }
 
 .list-main li {
@@ -126,9 +127,9 @@ nav {
       font-size: 2rem;
    }
    .toggle {
-      height: 78%;
-      width: 34%;
-      left: 11%;
+      height: 80%;
+      width: 33%;
+      left: 9%;
    }
 
    .label {
@@ -136,7 +137,7 @@ nav {
       height: 30px;
    }
    .checkbox:checked + .label .toggle {
-      transform: translateX(32px);
+      transform: translateX(34px);
    }
    .moon,
    .sun {
@@ -156,7 +157,17 @@ nav {
    .menu-btn__burger {
       display: none;
    }
+
    .list-main a {
       font-size: 1rem;
+   }
+
+   .bottom-container {
+      display: none;
+      visibility: hidden;
+   }
+   .bottom-container ul {
+      display: none;
+      visibility: hidden;
    }
 }

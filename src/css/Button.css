@@ -8,7 +8,7 @@
    font-size: 0.9rem;
    margin: 0.5rem;
    border-radius: 6px;
-   background-color: #0069ed;
+   background-color: var(--primary);
    color: white;
    font-weight: 900;
    cursor: pointer;
@@ -33,5 +33,5 @@
 }
 
 .active {
-   border: 3px solid red;
+   background-color: var(--secondary);
 }

@@ -1,0 +1,39 @@
+.not-found {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   flex-direction: column;
+   height: 90vh;
+   color: white;
+   background-color: black;
+}
+
+.not-found h1,
+.not-found h2 {
+   text-align: center;
+   padding: 0.5rem;
+   margin: 1rem;
+   font-size: 2rem;
+   font-weight: 700;
+}
+
+.not-found img {
+   width: 100%;
+   height: 100%;
+}
+
+.img-container {
+   width: 40%;
+}
+
+@media screen and (min-width: 701px) {
+   .not-found img {
+      margin: 0 auto;
+      width: 70%;
+   }
+}
+@media screen and (min-width: 1201px) {
+   .not-found img {
+      width: 50%;
+   }
+}

@@ -6,7 +6,7 @@
    padding: 1rem;
    height: 10vh;
    width: 100vw;
-   background-color: #0069ed;
+   background-color: var(--primary);
 }
 
 .box {
@@ -50,5 +50,11 @@ div.des {
       margin: 0 auto;
       width: 60%;
       justify-content: space-around;
+   }
+   .icon {
+      font-size: 2rem;
+   }
+   div.des {
+      font-size: 0.9rem;
    }
 }

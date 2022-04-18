@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import QuickAccessBox from "./QuickAccessBox";
 import Accordion from "./Accordion";
+import Breadcrumps from "./Breadcrumps";
 import "../css/About.css";
 
 import Photo from "../img/sla.png";
@@ -40,8 +41,12 @@ function About({ onClick, isClose }) {
    ];
    return (
       <>
+         <Breadcrumps link={"/"} name={"Home"} current={"About"} />
          <div className='about-container slide-in-right '>
             <div className='top-section'>
+               {/* <div className='bar'>
+                  <h1>About</h1>
+               </div> */}
                <div className='title'>
                   <h1>Hello, I am Slawek</h1>
                   <h2>and I love pushing the buttons!</h2>

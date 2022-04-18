@@ -46,6 +46,7 @@
 .open {
    padding: 1rem;
    font-size: 2rem;
+   color: var(--secondary);
 }
 
 @media screen and (min-width: 1101px) {

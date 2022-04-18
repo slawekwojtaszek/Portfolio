@@ -1,10 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../css/Navbar.css";
 import MobileMenu from "./MobileMenu";
-import sun from "../img/sun.png";
-import moon from "../img/moon.png";
-import { getValue } from "@testing-library/user-event/dist/utils";
 
 function Navbar({ isClose, onClick, newButton }) {
    // Dark Mode and Toggle
@@ -47,37 +44,37 @@ function Navbar({ isClose, onClick, newButton }) {
 
    // Show Hide the Top Bar Message
 
-   let getMessage = localStorage.getItem("message");
+   // let getMessage = localStorage.getItem("message");
 
-   useEffect(() => {
-      if (getMessage === "hide") {
-         const bar = document.querySelector(".top-bar");
-         bar.classList.add("hide");
-      }
-   });
+   // useEffect(() => {
+   //    if (getMessage === "hide") {
+   //       const bar = document.querySelector(".top-bar");
+   //       bar.classList.add("hide");
+   //    }
+   // });
 
-   const disableMessage = () => {
-      document.querySelector(".top-bar").classList.add("hide");
-      console.log("jestem disable i mam message hide");
-      localStorage.setItem("message", "hide");
-   };
-   const messageToggle = (e) => {
-      if (getMessage !== "hide") {
-         disableMessage();
-      }
-   };
+   // const disableMessage = () => {
+   //    document.querySelector(".top-bar").classList.add("hide");
+   //    console.log("jestem disable i mam message hide");
+   //    localStorage.setItem("message", "hide");
+   // };
+   // const messageToggle = (e) => {
+   //    if (getMessage !== "hide") {
+   //       disableMessage();
+   //    }
+   // };
 
    // localStorage.clear();
 
    return (
       <>
          <nav>
-            <div className='top-bar'>
+            {/* <section className='top-bar'>
                <div className='message'>I hope you are having a great day!</div>
                <div className='x' onClick={messageToggle}>
                   X
                </div>
-            </div>
+            </section> */}
             <div className='box8'></div>
             <div className='top-container'>
                <Link to='/' onClick={!isClose ? onClick : null}>
