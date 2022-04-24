@@ -2,9 +2,10 @@
 
 .form-container {
    display: flex;
-   justify-content: space-around;
+   height: 75vh;
+   justify-content: center;
    align-items: center;
-   flex-direction: column;
+   flex-direction: row;
 }
 
 .form-container .info {
@@ -51,9 +52,9 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   flex-direction: column;
    width: 100%;
-   /* border: 3px solid red; */
+   height: 100%;
+   padding: 2rem;
 }
 
 .form-container .container h1 {
@@ -65,16 +66,16 @@
 
 .form-container .container {
    font-family: "Lato", sans-serif;
-   padding: 0.5rem 1rem;
-   margin: 3rem 0 8rem 0;
+   padding: 3rem;
+   height: 100%;
    display: flex;
    justify-content: center;
    align-items: center;
    flex-direction: column;
    border: 1px solid white;
-   width: 90%;
+   width: 100%;
    border-radius: 5px;
-   box-shadow: 1px 0px 4px 3px rgb(216, 216, 216);
+   box-shadow: 1px 0px 20px 3px rgb(216, 216, 216);
 }
 
 .top,
@@ -126,7 +127,8 @@
 
 .container input:focus,
 .container textarea:focus {
-   border: 4px solid var(--secondary);
+   border: 2px solid var(--secondary);
+   outline: none;
 }
 
 /* .container input:focus {
@@ -170,10 +172,10 @@ button:hover {
       margin: 2rem;
       width: 20%;
    }
-   .form-container {
+   /* .form-container {
       padding-bottom: 5rem;
-   }
+   } */
    .form-container .container {
-      width: 60%;
+      width: 50%;
    }
 }

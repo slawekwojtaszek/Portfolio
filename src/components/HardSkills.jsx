@@ -63,7 +63,7 @@ function HardSkills({ isHard }) {
                icon={<SiHtml5 />}
                name={"HTML 5"}
                skillType={"Hard Skill"}
-               list1={`Understanding the importance of Semantic elements and structure`}
+               list1={`Understanding the Semantic elements and structure`}
                list2={`Input types, attributes and forms.`}
                list3={`Using Local Storage`}
                list4={`Familiar with dozens atributes`}

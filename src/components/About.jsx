@@ -1,5 +1,4 @@
-import React from "react";
-import Navbar from "./Navbar";
+import React, { useState, useEffect } from "react";
 import QuickAccessBox from "./QuickAccessBox";
 import Accordion from "./Accordion";
 import Breadcrumps from "./Breadcrumps";
@@ -7,7 +6,69 @@ import "../css/About.css";
 
 import Photo from "../img/sla.png";
 
+import Cheese from "../img/cheese.png";
+
 function About({ onClick, isClose }) {
+   const likes = [
+      {
+         title: " pushing the buttons",
+         icon: "elo",
+         id: 0,
+      },
+      {
+         title: " cheese",
+         icon: Cheese,
+         id: 1,
+      },
+      {
+         title: " siemka",
+         icon: "elo",
+         id: 2,
+      },
+      {
+         title: " siemka",
+         icon: "elo",
+         id: 3,
+      },
+      {
+         title: " siemka",
+         icon: "elo",
+         id: 4,
+      },
+      {
+         title: " siemka",
+         icon: "elo",
+         id: 5,
+      },
+      {
+         title: " siemka",
+         icon: "elo",
+         id: 6,
+      },
+      {
+         title: " siemka",
+         icon: "elo",
+         id: 7,
+      },
+   ];
+
+   const [counter, setCounter] = useState(0);
+
+   let interval;
+   const changeNumber = () => {
+      interval = setInterval(() => {
+         setCounter((counter) => counter + 1);
+      }, 2000);
+   };
+
+   useEffect(() => {
+      changeNumber();
+   }, []);
+
+   setTimeout(() => {
+      clearInterval(interval);
+   }, 8000);
+
    const data = [
       {
          question: "Why Tech World?",
@@ -41,25 +102,34 @@ function About({ onClick, isClose }) {
    ];
    return (
       <>
-         <Breadcrumps link={"/"} name={"Home"} current={"About"} />
-         <div className='about-container slide-in-right '>
+         {/* <Breadcrumps link={"/"} name={"Home"} current={"About"} /> */}
+         <div className='about-container '>
             <div className='top-section'>
-               {/* <div className='bar'>
-                  <h1>About</h1>
-               </div> */}
                <div className='title'>
                   <h1>Hello, I am Slawek</h1>
-                  <h2>and I love pushing the buttons!</h2>
+                  <div className='whatlove'>
+                     <h2>
+                        and I love
+                        <span className='slide-in-bck-center'>
+                           {likes[counter].title}
+                        </span>
+                     </h2>
+                     <span>
+                        <img src={likes[counter].icon} alt='' />
+                     </span>
+                  </div>
                </div>
-               <div className='photo'>
-                  {" "}
-                  <img src={Photo} alt='' />
-               </div>
+               <div className='photo'>{/* <img src='' alt='' /> */}</div>
             </div>
 
             <div className='middle-section'></div>
 
             <div className='bottom-section'>
+               <div className='info'>
+                  <h1>You've got questions?</h1>
+                  <h2>I've got answers</h2>
+               </div>
+
                {data.map(({ question, answer, id }) => (
                   <Accordion key={id} title={question} content={answer} />
                ))}

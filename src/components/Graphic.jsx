@@ -8,7 +8,7 @@ function Graphic() {
          viewBox='0 0 980 490'
          fill='none'
          xmlns='http://www.w3.org/2000/svg'>
-         <g id='file 1' clip-path='url(#clip0_2_2)'>
+         <g id='file 1' clipPath='url(#clip0_2_2)'>
             <g id='board'>
                <path
                   id='Vector'

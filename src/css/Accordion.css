@@ -24,18 +24,24 @@
    height: 8vh;
    font-size: 1.1rem;
    font-weight: 700;
-   border-radius: 5px;
-   color: white;
-   background-color: black;
-   border: 1px solid white;
+   color: black;
+   background-color: white;
+   border: 1px solid black;
+   border-radius: 10px;
+   transition: 0.3s;
 }
+
+/* .question-cont:hover {
+   background-color: white;
+   color: black;
+} */
 
 .answer-cont {
    margin: 0.5rem;
    background-color: black;
    color: white;
-   border: 1px solid white;
-   border-radius: 5px;
+   /* border-bottom: 1px solid black; */
+   border-radius: 10px;
 }
 
 .answer-cont p {
@@ -46,7 +52,7 @@
 .open {
    padding: 1rem;
    font-size: 2rem;
-   color: var(--secondary);
+   color: black;
 }
 
 @media screen and (min-width: 1101px) {

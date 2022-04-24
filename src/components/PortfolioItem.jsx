@@ -14,7 +14,7 @@ function PortfolioItem({
    summary,
 }) {
    return (
-      <section className='single-item slide-in-right '>
+      <section className='single-item  '>
          <div className='single-item-header'>
             {" "}
             <div className='single-item-header-text'>
@@ -23,12 +23,12 @@ function PortfolioItem({
                   <h2 className='icon'>{icon3}</h2>
                </div>
                <div className='single-item-links'>
-                  <Link to={live}>
+                  <a target='_blank' href={live}>
                      <div className='live'>
                         <div className='single-item-icon'>{icon2}</div>
                         <p>Live</p>
                      </div>
-                  </Link>
+                  </a>
                   <a target='_blank' href={github}>
                      <div className='git'>
                         <div className='single-item-icon'>{icon1}</div>

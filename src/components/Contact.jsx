@@ -7,19 +7,8 @@ import Breadcrumps from "./Breadcrumps";
 function Contact() {
    return (
       <>
-         <Breadcrumps link={"/"} name={"Home"} current={"Contact"} />
-         <div className='form-container scale-up-center'>
-            <div className='info'>
-               {/* <h1>Contact Me</h1> */}
-               <img src={Email} alt='' />
-               {/* <h2>Use the form below or send an email directly to:</h2>
-               <h3>
-                  <a href='mailto:insertemailhere@xyz.com'>
-                     hello@voytashek.com
-                  </a>
-               </h3> */}
-            </div>
-
+         {/* <Breadcrumps link={"/"} name={"Home"} current={"Contact"} /> */}
+         <div className='form-container '>
             <form name='contact' method='post' action='/success.html'>
                <input type='hidden' name='form-name' value='contact' />
                <div className='container'>
@@ -64,9 +53,19 @@ function Contact() {
                            placeholder='Enter your message here'></textarea>
                      </label>
                   </div>
-                  <button type='submit'>Send</button>
+                  <button type='submit'>Send Message</button>
                </div>
             </form>
+            {/* <div className='info'>
+               <h1>Contact Me</h1>
+               <img src={Email} alt='' />
+               <h2>Use the form below or send an email directly to:</h2>
+               <h3>
+                  <a href='mailto:insertemailhere@xyz.com'>
+                     hello@voytashek.com
+                  </a>
+               </h3>
+            </div> */}
          </div>
          <QuickAccessBox />
       </>

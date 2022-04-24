@@ -7,6 +7,10 @@
 
 /* Night Mode */
 
+body.light-mode {
+   background-color: white;
+}
+
 .light-mode nav,
 .light-mode .skills-container,
 .light-mode .wrapper,
@@ -65,21 +69,32 @@
 }
 
 .light-mode .answer-cont {
-   border: 1px solid black;
+   /* border: 1px solid black; */
+   background-color: white;
+   color: black;
 }
 
 .light-mode .question-cont {
    border: 1px solid black;
+   background-color: black;
+   color: white;
+}
+
+.light-mode .open {
+   color: white;
 }
 
 .light-mode .bottom-container a {
-   border-bottom: 5px solid black;
+   border: 2px solid rgb(0, 0, 0);
+}
+.light-mode .bottom-container a:hover {
+   color: white;
+   background-color: black;
 }
 
 .light-mode .container input,
 .light-mode .container textarea,
-.light-mode .container,
-.light-mode {
+.light-mode .container {
    border: 1px solid rgb(165, 165, 165);
 }
 
@@ -187,3 +202,26 @@
    }
 }
 
+.hidden {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   width: 100vw;
+   background-color: blue;
+}
+
+.input {
+   width: 50%;
+}
+
+.input input {
+   width: 100%;
+   height: 6vh;
+}
+
+.input h1 {
+   font-size: 2rem;
+   color: black;
+   background-color: yellow;
+}

@@ -19,6 +19,18 @@ function App(props) {
    const [isClose, setisClose] = useState(true);
    document.body.style.overflowX = "hidden";
 
+   const [isHidden, setisHidden] = useState(false);
+   const [value, setValue] = useState("");
+
+   const handleInput = (e) => {
+      const test = e.target.value;
+      setValue((value) => test);
+
+      if (test === "elo") {
+         setisHidden((isHidden) => false);
+      }
+   };
+
    const newButton = () => {
       setisClose((isClose) => !isClose);
       if (!isClose) {
@@ -30,37 +42,52 @@ function App(props) {
 
    return (
       <>
-         <div className='wrapper '>
-            <Router>
-               <Navbar onClick={newButton} isClose={isClose} />
+         {isHidden ? (
+            <div className='hidden'>
+               <div className='input'>
+                  <h1>password</h1>
+                  <input type='text' value={value} onChange={handleInput} />
+               </div>
+            </div>
+         ) : (
+            <div className='wrapper '>
+               <Router>
+                  <Navbar onClick={newButton} isClose={isClose} />
 
-               <Routes>
-                  <Route path='*' element={<NotFound />} />
-                  <Route path='/' element={<Header />} />
+                  <Routes>
+                     <Route path='*' element={<NotFound />} />
+                     <Route path='/' element={<Header />} />
 
-                  <Route
-                     path='/portfolio'
-                     element={
-                        <Portfolio onClick={newButton} isClose={isClose} />
-                     }
-                  />
-                  <Route
-                     path='/about'
-                     element={<About onClick={newButton} isClose={isClose} />}
-                  />
-                  <Route path='/' element={<Header />} />
-                  <Route
-                     path='/skills'
-                     element={<Skills onClick={newButton} isClose={isClose} />}
-                  />
-                  <Route
-                     path='/contact'
-                     element={<Contact onClick={newButton} isClose={isClose} />}
-                  />
-                  <Route element={<NotFound />} />
-               </Routes>
-            </Router>
-         </div>
+                     <Route
+                        path='/portfolio'
+                        element={
+                           <Portfolio onClick={newButton} isClose={isClose} />
+                        }
+                     />
+                     <Route
+                        path='/about'
+                        element={
+                           <About onClick={newButton} isClose={isClose} />
+                        }
+                     />
+                     <Route path='/' element={<Header />} />
+                     <Route
+                        path='/skills'
+                        element={
+                           <Skills onClick={newButton} isClose={isClose} />
+                        }
+                     />
+                     <Route
+                        path='/contact'
+                        element={
+                           <Contact onClick={newButton} isClose={isClose} />
+                        }
+                     />
+                     <Route element={<NotFound />} />
+                  </Routes>
+               </Router>
+            </div>
+         )}
       </>
    );
 }

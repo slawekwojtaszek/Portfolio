@@ -36,8 +36,8 @@ function Skills({ onClick, isClose }) {
 
    return (
       <>
-         <Breadcrumps link={"/"} name={"Home"} current={"Skills"} />
-         <div className='skills-container slide-in-right'>
+         {/* <Breadcrumps link={"/"} name={"Home"} current={"Skills"} /> */}
+         <div className='skills-container '>
             <div className='buttons'>
                {isHard && !isSoft ? (
                   <Button

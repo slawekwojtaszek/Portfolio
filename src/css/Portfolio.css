@@ -15,7 +15,7 @@
    align-items: center;
    flex-direction: column;
    height: 100%;
-   width: 80%;
+   width: 85%;
    background-color: #fff;
    border-radius: 7px;
 }
@@ -107,10 +107,12 @@
    justify-content: center;
    align-items: center;
 }
-img {
+.single-item-photo img {
    display: block;
    height: 80%;
    width: 100%;
+   border-radius: 5px;
+   /* border: 1px solid rgb(37, 37, 37); */
 }
 
 /* Info Bottom */
